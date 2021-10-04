@@ -12,7 +12,7 @@ public class LinkedList {
     }
 
     /**
-     *  Code Challenge 05
+     * Code Challenge 05
      */
 
     public void insert(String data) {
@@ -61,7 +61,7 @@ public class LinkedList {
     }
 
     /**
-     *  Code Challenge 06
+     * Code Challenge 06
      */
 
     public void append(String data) {
@@ -125,20 +125,24 @@ public class LinkedList {
     }
 
     /**
-     *  Code Challenge 07
+     * Code Challenge 07
      */
 
-    public String kthFromEnd(int index)  {
+    public String kthFromEnd(int index) {
+
         LinkedListNode current = head;
-        if (index > getSize() - 1 || index < 0) {
-            return "Exception";
+        if (head == null) {
+            System.out.println("The list is empty");
         }
-        int i = 0;
-        while (i < (getSize() - index - 1)) {
-            current = current.getNext();
-            i++;
-        }
-        return current.getData();
+            if (index > getSize() - 1 || index < 0) {
+                return "Exception";
+            }
+            int i = 0;
+            while (i < (getSize() - index - 1)) {
+                current = current.getNext();
+                i++;
+            }
+            return current.getData();
     }
 
 }

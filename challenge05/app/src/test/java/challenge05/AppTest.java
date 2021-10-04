@@ -114,14 +114,14 @@ class AppTest {
  *  Code Challenge 07 TEST
  */
 
-@Test
-public void greaterThanLength() {
-    LinkedList testList = new LinkedList();
-    testList.insert("M");
-    testList.insert("O");
-    testList.insert("H");
-    testList.insert("A");
-    assertEquals("Exception", testList.kthFromEnd(5));
+    @Test
+    public void greaterThanLength() {
+        LinkedList testList = new LinkedList();
+        testList.insert("M");
+        testList.insert("O");
+        testList.insert("H");
+        testList.insert("A");
+        assertEquals("Exception", testList.kthFromEnd(5));
 }
 
     @Test
@@ -166,7 +166,7 @@ public void greaterThanLength() {
         testList.insert("t");
         testList.insert("h");
 
-        assertEquals(" ", testList.kthFromEnd(4));
+        assertEquals(" ", testList.kthFromEnd(5));
     }
 
 }
