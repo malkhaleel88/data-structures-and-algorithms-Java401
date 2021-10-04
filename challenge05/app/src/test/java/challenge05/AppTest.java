@@ -23,7 +23,7 @@ class AppTest {
         Test.insert("20");
         Test.insert("50");
         Test.insert("100");
-        String expected = "{ 100 } -> { 50 } -> { 20 } -> NULL";
+        String expected = " { 20 }  --->  { 50 }  --->  { 100 }  --->  NULL ";
         assertEquals(expected, Test.toString());
     }
 
@@ -33,7 +33,7 @@ class AppTest {
         Test.insert("20");
         Test.insert("50");
         Test.insert("100");
-        assertEquals("100", Test.head.getData());
+        assertEquals("20", Test.head.getData());
     }
 
     @Test
@@ -43,7 +43,7 @@ class AppTest {
         Test.insert("20");
         Test.insert("50");
         Test.insert("100");
-        String expected = "{ 100 } -> { 50 } -> { 20 } -> { 10 } -> NULL";
+        String expected = " { 10 }  --->  { 20 }  --->  { 50 }  --->  { 100 }  --->  NULL ";
         assertEquals(expected, Test.toString());
     }
 
@@ -74,7 +74,7 @@ class AppTest {
         ll.insert("50");
         ll.insert("100");
 
-        String expected = "{ 100 } -> { 50 } -> { 20 } -> NULL";
+        String expected = " { 20 }  --->  { 50 }  --->  { 100 }  --->  NULL ";
         assertEquals(expected, ll.toString());
     }
     @Test  public void isEmptyTest() {
@@ -87,7 +87,7 @@ class AppTest {
         Test.insert("50");
         Test.insert("80");
         Test.append("100");
-        String expected = "{ 100 } -> { 50 } -> { 20 } -> { 20 } -> NULL";
+        String expected = " { 20 }  --->  { 50 }  --->  { 80 }  --->  { 100 }  --->  NULL ";
         assertEquals(expected, Test.toString());
     }
     @Test  public void addBefore() {
@@ -96,7 +96,7 @@ class AppTest {
         Test.insert("50");
         Test.insert("100");
         Test.insertBefore("50","70");
-        String expected = "{ 100 } -> { 70 } -> { 50 } -> { 20 } -> NULL";
+        String expected = " { 20 }  --->  { 70 }  --->  { 50 }  --->  { 100 }  --->  NULL ";
         assertEquals(expected, Test.toString());
     }
     @Test public void addAfter(){
@@ -106,7 +106,7 @@ class AppTest {
         Test.insert("50");
         Test.insert("100");
         Test.insertAfter("50","30");
-        String expected = "{ 100 } -> { 50 } -> { 30 } -> { 20 } -> NULL";
+        String expected = " { 20 }  --->  { 50 }  --->  { 30 }  --->  { 100 }  --->  NULL ";
         assertEquals(expected, Test.toString());
     }
 
