@@ -14,20 +14,28 @@ public class App {
         linkedList.insert("O");
         linkedList.insert("H");
         linkedList.insert("A");
-        linkedList.insert("M");
-        linkedList.insert("M");
-        linkedList.insert("A");
-        linkedList.insert("D");
-
         System.out.println(linkedList);
+
+        linkedList.append("ABC");
+        System.out.println(linkedList);
+
         System.out.println(linkedList.include("M"));
         System.out.println(linkedList.include("N"));
 
-        linkedList.insertBefore("O","K");
-        System.out.println(linkedList);
-        linkedList.insertAfter("M","E");
-        linkedList.insertAfter("D","Z");
+        linkedList.insertBefore("D","K");
         System.out.println(linkedList);
 
+        linkedList.insertBefore("A","K");
+        System.out.println(linkedList);
+
+        linkedList.insertAfter("A","E");
+        System.out.println(linkedList);
+
+        linkedList.insertAfter("ABC","Z");
+        System.out.println(linkedList);
+
+        System.out.println(linkedList.kthFromEnd(8));
+        System.out.println(linkedList.kthFromEnd(5));
+        System.out.println(linkedList.kthFromEnd(-2));
     }
 }

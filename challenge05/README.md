@@ -1,6 +1,8 @@
 # 5.Singly Linked List
+
 Singly linked lists contain nodes which have a data field as well as 'next' field, which points to the next node in line of nodes.
 ## Challenge And API
+
 1. A Node class that has properties for the value stored in the Node, and a pointer to the next Node.
 2. LinkedLink Class, that contains:
 - A head property.
@@ -8,7 +10,8 @@ Singly linked lists contain nodes which have a data field as well as 'next' fiel
 - Includes method -> Indicates whether that value exists as a Node's value somewhere within the list.
 - to string -> Returns: a string representing all the values in the Linked List, formatted as:
   "{ a } -> { b } -> { c } -> NULL"
-## Approach & Efficiency :
+## Approach & Efficiency
+
 - I used while loops in each method which takes space : O(1) and time: O(n).
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -37,8 +40,20 @@ This challenge has three tasks:
 
 ![Insert after](./assets/insertAfter.jpg)
 
-## Approach & Efficiency :
+## Approach & Efficiency
+
 - I used while loops in each method which takes space : O(1) and time: O(n).
 
 
 -------------------------------------------------------------------------------------------------------------------------
+
+# 7.Linked List Insertions
+
+*Create a method that accepts a `int` k as a parameter and return the node’s value that is k places from the tail of the linked list.*
+## Whiteboard Process
+
+![linked-list-kth](./assets/linked-list-kth.jpg)
+
+## Approach & Efficiency
+
+- I used while loops in each method which takes space : O(1) and time: O(n).

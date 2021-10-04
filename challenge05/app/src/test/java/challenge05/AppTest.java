@@ -96,7 +96,7 @@ class AppTest {
         Test.insert("50");
         Test.insert("100");
         Test.insertBefore("50","70");
-        String expected = " { 20 }  --->  { 70 }  --->  { 50 }  --->  { 100 }  --->  NULL ";
+        String expected = " { 100 }  --->  { 70 }  --->  { 50 }  --->  { 20 }  --->  NULL ";
         assertEquals(expected, Test.toString());
     }
     @Test public void addAfter(){
@@ -106,9 +106,67 @@ class AppTest {
         Test.insert("50");
         Test.insert("100");
         Test.insertAfter("50","30");
-        String expected = " { 20 }  --->  { 50 }  --->  { 30 }  --->  { 100 }  --->  NULL ";
+        String expected = " { 100 }  --->  { 50 }  --->  { 30 }  --->  { 20 }  --->  NULL ";
         assertEquals(expected, Test.toString());
     }
 
+/**
+ *  Code Challenge 07 TEST
+ */
+
+    @Test
+    public void greaterThanLength() {
+        LinkedList testList = new LinkedList();
+        testList.insert("M");
+        testList.insert("O");
+        testList.insert("H");
+        testList.insert("A");
+        assertEquals("Exception", testList.kthFromEnd(5));
+}
+
+    @Test
+    public void equalThanLength() {
+        LinkedList testList = new LinkedList();
+        testList.insert("M");
+        testList.insert("O");
+        testList.insert("H");
+        testList.insert("A");
+        assertEquals("Exception", testList.kthFromEnd(4));
+    }
+
+    @Test
+    public void negativeIndex() {
+        LinkedList testList = new LinkedList();
+        testList.insert("M");
+        testList.insert("O");
+        testList.insert("H");
+        testList.insert("A");
+        assertEquals("Exception", testList.kthFromEnd(-1));
+    }
+
+    @Test
+    public void size1() {
+        LinkedList testList = new LinkedList();
+        testList.insert("M");
+        assertEquals("Exception", testList.kthFromEnd(1));
+    }
+
+    @Test
+    public void happyPath() {
+        LinkedList testList = new LinkedList();
+
+        testList.insert("H");
+        testList.insert("a");
+        testList.insert("p");
+        testList.insert("p");
+        testList.insert("y");
+        testList.insert(" ");
+        testList.insert("P");
+        testList.insert("a");
+        testList.insert("t");
+        testList.insert("h");
+
+        assertEquals(" ", testList.kthFromEnd(5));
+    }
 
 }
