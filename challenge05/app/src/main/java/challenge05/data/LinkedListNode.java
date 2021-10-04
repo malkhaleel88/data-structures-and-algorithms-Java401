@@ -3,7 +3,7 @@ package challenge05.data;
 public class LinkedListNode {
 
  private String data;
- private LinkedListNode next;
+ public LinkedListNode next;
 
     public LinkedListNode(String data) {
         this.data = data;

@@ -3,12 +3,112 @@
  */
 package challenge05;
 
+import challenge05.structure.LinkedList;
 import org.junit.jupiter.api.Test;
+
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-    @Test void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+
+    @Test
+    void instantiateLinkedList() {
+        LinkedList Test = new LinkedList();
+        assertNull(Test.head);
     }
+
+    @Test
+    void canInsert() {
+        LinkedList Test = new LinkedList();
+        Test.insert("20");
+        Test.insert("50");
+        Test.insert("100");
+        String expected = " { 20 }  --->  { 50 }  --->  { 100 }  --->  NULL ";
+        assertEquals(expected, Test.toString());
+    }
+
+    @Test
+    void headPointsRight() {
+        LinkedList Test = new LinkedList();
+        Test.insert("20");
+        Test.insert("50");
+        Test.insert("100");
+        assertEquals("20", Test.head.getData());
+    }
+
+    @Test
+    void canInsertMultiple() {
+        LinkedList Test = new LinkedList();
+        Test.insert("10");
+        Test.insert("20");
+        Test.insert("50");
+        Test.insert("100");
+        String expected = " { 10 }  --->  { 20 }  --->  { 50 }  --->  { 100 }  --->  NULL ";
+        assertEquals(expected, Test.toString());
+    }
+
+    @Test
+    void LinkedListIncludes() {
+        LinkedList ll = new LinkedList();
+        ll.insert("100");
+        ll.insert("50");
+        ll.insert("20");
+        assertTrue(ll.include("50"));
+    }
+
+    @Test
+    void LinkedListNotIncludes() {
+        LinkedList ll = new LinkedList();
+        ll.insert("100");
+        ll.insert("50");
+        ll.insert("20");
+
+        assertFalse(ll.include("30"));
+        assertFalse(ll.include("70"));
+    }
+
+    @Test
+    void includesWorkingFine() {
+        LinkedList ll = new LinkedList();
+        ll.insert("20");
+        ll.insert("50");
+        ll.insert("100");
+
+        String expected = " { 20 }  --->  { 50 }  --->  { 100 }  --->  NULL ";
+        assertEquals(expected, ll.toString());
+    }
+    @Test  public void isEmptyTest() {
+        LinkedList testList = new LinkedList();
+    }
+
+    @Test  public void addAtEnd() {
+        LinkedList Test = new LinkedList();
+        Test.insert("20");
+        Test.insert("50");
+        Test.insert("80");
+        Test.append("100");
+        String expected = " { 20 }  --->  { 50 }  --->  { 80 }  --->  { 100 }  --->  NULL ";
+        assertEquals(expected, Test.toString());
+    }
+    @Test  public void addBefore() {
+        LinkedList Test = new LinkedList();
+        Test.insert("20");
+        Test.insert("50");
+        Test.insert("100");
+        Test.insertBefore("50","70");
+        String expected = " { 20 }  --->  { 70 }  --->  { 50 }  --->  { 100 }  --->  NULL ";
+        assertEquals(expected, Test.toString());
+    }
+    @Test public void addAfter(){
+
+        LinkedList Test = new LinkedList();
+        Test.insert("20");
+        Test.insert("50");
+        Test.insert("100");
+        Test.insertAfter("50","30");
+        String expected = " { 20 }  --->  { 50 }  --->  { 30 }  --->  { 100 }  --->  NULL ";
+        assertEquals(expected, Test.toString());
+    }
+
+
 }
