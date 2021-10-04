@@ -10,3 +10,35 @@ Singly linked lists contain nodes which have a data field as well as 'next' fiel
   "{ a } -> { b } -> { c } -> NULL"
 ## Approach & Efficiency :
 - I used while loops in each method which takes space : O(1) and time: O(n).
+
+------------------------------------------------------------------------------------------------------------------------
+
+# 6.Linked List Insertions
+
+This challenge has three tasks:
+
+1. **Append**: Adds a new node with the given value to the end of the list.
+
+2. **Insert before**: Adds a new node with the given new value immediately before the first node that has the value specified.
+
+3. **Insert after**: Adds a new node with the given new value immediately after the first node that has the value specified.
+
+## Whiteboard Process
+
+### Append 
+
+![Append](./assets/Append.jpg)
+
+### Insert before
+
+![Insert before](./assets/insertBefore.jpg)
+
+### Insert after
+
+![Insert after](./assets/insertAfter.jpg)
+
+## Approach & Efficiency :
+- I used while loops in each method which takes space : O(1) and time: O(n).
+
+
+-------------------------------------------------------------------------------------------------------------------------

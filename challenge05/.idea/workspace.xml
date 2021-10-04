@@ -4,7 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd85196f-4831-417e-a7b6-82b28c4f1a03" name="Changes" comment="" />
+    <list default="true" id="dd85196f-4831-417e-a7b6-82b28c4f1a03" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.buildship.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/.settings/org.eclipse.buildship.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/bin/main/challenge05/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/bin/main/challenge05/data/LinkedListNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/bin/main/challenge05/structure/LinkedList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/bin/test/challenge05/AppTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Append.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/insertAfter.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/insertBefore.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/challenge05/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/challenge05/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/challenge05/data/LinkedListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/challenge05/data/LinkedListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/challenge05/structure/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/challenge05/structure/LinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/challenge05/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/challenge05/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/challenge05/data/LinkedListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/challenge05/data/LinkedListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/challenge05/structure/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/challenge05/structure/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/challenge05/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/challenge05/AppTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +72,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.AppTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="challenge05.App" />
       <module name="challenge05.app.main" />
@@ -56,8 +86,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppTest" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="challenge05.App" />
+      <module name="challenge05.app.test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;challenge05.AppTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.AppTest" />
+      <item itemvalue="Application.App" />
+      <item itemvalue="Gradle.AppTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AppTest" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>

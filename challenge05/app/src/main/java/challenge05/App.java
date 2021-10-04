@@ -23,5 +23,11 @@ public class App {
         System.out.println(linkedList.include("M"));
         System.out.println(linkedList.include("N"));
 
+        linkedList.insertBefore("O","K");
+        System.out.println(linkedList);
+        linkedList.insertAfter("M","E");
+        linkedList.insertAfter("D","Z");
+        System.out.println(linkedList);
+
     }
 }
