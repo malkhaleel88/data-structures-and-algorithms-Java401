@@ -47,7 +47,20 @@ This challenge has three tasks:
 
 -------------------------------------------------------------------------------------------------------------------------
 
-# 7.Linked List Insertions
+# 7.Linked List-kth
+
+*Create a method that accepts a `int` k as a parameter and return the node’s value that is k places from the tail of the linked list.*
+## Whiteboard Process
+
+![linked-list-kth](./assets/linked-list-kth.jpg)
+
+## Approach & Efficiency
+
+- I used while loops in each method which takes space : O(1) and time: O(n).
+
+--------------------------------------------------------------------------------------------------------------------------
+
+# .Linked List Zip
 
 *Create a method that accepts a `int` k as a parameter and return the node’s value that is k places from the tail of the linked list.*
 ## Whiteboard Process
