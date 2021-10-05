@@ -60,12 +60,12 @@ This challenge has three tasks:
 
 --------------------------------------------------------------------------------------------------------------------------
 
-# .Linked List Zip
+# 8.Linked List Zip
 
-*Create a method that accepts a `int` k as a parameter and return the node’s value that is k places from the tail of the linked list.*
+*Create a method that accepts two LinkedList parameters that Zip the two linked lists together into one so that the nodes alternate between the two lists.*
 ## Whiteboard Process
 
-![linked-list-kth](./assets/linked-list-kth.jpg)
+![linked-list-zip](./assets/linked-list-zip.jpg)
 
 ## Approach & Efficiency
 
