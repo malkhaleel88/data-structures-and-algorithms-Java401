@@ -11,6 +11,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
 
+    /**
+     *  Code Challenge 05 TEST
+     */
+
     @Test
     void instantiateLinkedList() {
         LinkedList Test = new LinkedList();
@@ -23,7 +27,7 @@ class AppTest {
         Test.insert("20");
         Test.insert("50");
         Test.insert("100");
-        String expected = " { 20 }  --->  { 50 }  --->  { 100 }  --->  NULL ";
+        String expected = " { 100 }  --->  { 50 }  --->  { 20 }  --->  NULL ";
         assertEquals(expected, Test.toString());
     }
 
@@ -33,7 +37,7 @@ class AppTest {
         Test.insert("20");
         Test.insert("50");
         Test.insert("100");
-        assertEquals("20", Test.head.getData());
+        assertEquals("100", Test.head.getData());
     }
 
     @Test
@@ -43,7 +47,7 @@ class AppTest {
         Test.insert("20");
         Test.insert("50");
         Test.insert("100");
-        String expected = " { 10 }  --->  { 20 }  --->  { 50 }  --->  { 100 }  --->  NULL ";
+        String expected = " { 100 }  --->  { 50 }  --->  { 20 }  --->  { 10 }  --->  NULL ";
         assertEquals(expected, Test.toString());
     }
 
@@ -74,12 +78,16 @@ class AppTest {
         ll.insert("50");
         ll.insert("100");
 
-        String expected = " { 20 }  --->  { 50 }  --->  { 100 }  --->  NULL ";
+        String expected = " { 100 }  --->  { 50 }  --->  { 20 }  --->  NULL ";
         assertEquals(expected, ll.toString());
     }
     @Test  public void isEmptyTest() {
         LinkedList testList = new LinkedList();
     }
+
+    /**
+     *  Code Challenge 06 TEST
+     */
 
     @Test  public void addAtEnd() {
         LinkedList Test = new LinkedList();
@@ -87,9 +95,22 @@ class AppTest {
         Test.insert("50");
         Test.insert("80");
         Test.append("100");
-        String expected = " { 20 }  --->  { 50 }  --->  { 80 }  --->  { 100 }  --->  NULL ";
+        String expected = " { 80 }  --->  { 50 }  --->  { 20 }  --->  { 100 }  --->  NULL ";
         assertEquals(expected, Test.toString());
     }
+
+    @Test  public void addMultiAtEnd() {
+        LinkedList Test = new LinkedList();
+        Test.insert("20");
+        Test.insert("50");
+        Test.insert("80");
+        Test.append("100");
+        Test.append("10");
+        Test.append("90");
+        String expected = " { 80 }  --->  { 50 }  --->  { 20 }  --->  { 100 }  --->  { 10 }  --->  { 90 }  --->  NULL ";
+        assertEquals(expected, Test.toString());
+    }
+
     @Test  public void addBefore() {
         LinkedList Test = new LinkedList();
         Test.insert("20");
@@ -99,6 +120,17 @@ class AppTest {
         String expected = " { 100 }  --->  { 70 }  --->  { 50 }  --->  { 20 }  --->  NULL ";
         assertEquals(expected, Test.toString());
     }
+
+    @Test  public void addBeforefirst() {
+        LinkedList Test = new LinkedList();
+        Test.insert("20");
+        Test.insert("50");
+        Test.insert("100");
+        Test.insertBefore("100","40");
+        String expected = " { 40 }  --->  { 100 }  --->  { 50 }  --->  { 20 }  --->  NULL ";
+        assertEquals(expected, Test.toString());
+    }
+
     @Test public void addAfter(){
 
         LinkedList Test = new LinkedList();
@@ -110,9 +142,20 @@ class AppTest {
         assertEquals(expected, Test.toString());
     }
 
-/**
- *  Code Challenge 07 TEST
- */
+    @Test public void addAfterlast(){
+
+        LinkedList Test = new LinkedList();
+        Test.insert("20");
+        Test.insert("50");
+        Test.insert("100");
+        Test.insertAfter("20","70");
+        String expected = " { 100 }  --->  { 50 }  --->  { 20 }  --->  { 70 }  --->  NULL ";
+        assertEquals(expected, Test.toString());
+    }
+
+    /**
+     *  Code Challenge 07 TEST
+     */
 
     @Test
     public void greaterThanLength() {
