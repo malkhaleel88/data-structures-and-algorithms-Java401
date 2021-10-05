@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="dd85196f-4831-417e-a7b6-82b28c4f1a03" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/challenge05/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/challenge05/AppTest.java" afterDir="false" />
+>>>>>>> 17a3723142e12dc25d5d5bb8de5a02e63872e7b8
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +58,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Gradle.AppTest.happyPath">
+  <component name="RunManager" selected="Gradle.AppTest">
     <configuration name="AppTest" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="challenge05.App" />
       <module name="challenge05.app.test" />
@@ -62,12 +66,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.equalThanLength" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge05.AppTest.equalThanLength&quot;" />
+        <option name="scriptParameters" value="--tests &quot;challenge05.AppTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -83,12 +87,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.greaterThanLength" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.addAfter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge05.AppTest.greaterThanLength&quot;" />
+        <option name="scriptParameters" value="--tests &quot;challenge05.AppTest.addAfter&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -104,12 +108,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.happyPath" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.addAfterlast" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge05.AppTest.happyPath&quot;" />
+        <option name="scriptParameters" value="--tests &quot;challenge05.AppTest.addAfterlast&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -125,12 +129,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.negativeIndex" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.addBeforefirst" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge05.AppTest.negativeIndex&quot;" />
+        <option name="scriptParameters" value="--tests &quot;challenge05.AppTest.addBeforefirst&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -146,12 +150,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.size1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.addMultiAtEnd" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge05.AppTest.size1&quot;" />
+        <option name="scriptParameters" value="--tests &quot;challenge05.AppTest.addMultiAtEnd&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -169,19 +173,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.AppTest" />
-      <item itemvalue="Gradle.AppTest.greaterThanLength" />
-      <item itemvalue="Gradle.AppTest.equalThanLength" />
-      <item itemvalue="Gradle.AppTest.negativeIndex" />
-      <item itemvalue="Gradle.AppTest.size1" />
-      <item itemvalue="Gradle.AppTest.happyPath" />
+      <item itemvalue="Gradle.AppTest.addAfter" />
+      <item itemvalue="Gradle.AppTest.addBeforefirst" />
+      <item itemvalue="Gradle.AppTest.addAfterlast" />
+      <item itemvalue="Gradle.AppTest.addMultiAtEnd" />
+      <item itemvalue="Gradle.AppTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AppTest.happyPath" />
-        <item itemvalue="Gradle.AppTest.size1" />
-        <item itemvalue="Gradle.AppTest.negativeIndex" />
-        <item itemvalue="Gradle.AppTest.equalThanLength" />
-        <item itemvalue="Gradle.AppTest.greaterThanLength" />
+        <item itemvalue="Gradle.AppTest" />
+        <item itemvalue="Gradle.AppTest.addMultiAtEnd" />
+        <item itemvalue="Gradle.AppTest.addAfterlast" />
+        <item itemvalue="Gradle.AppTest.addBeforefirst" />
+        <item itemvalue="Gradle.AppTest.addAfter" />
       </list>
     </recent_temporary>
   </component>

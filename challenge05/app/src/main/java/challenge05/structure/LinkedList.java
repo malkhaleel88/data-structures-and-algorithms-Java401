@@ -145,4 +145,42 @@ public class LinkedList {
             return current.getData();
     }
 
+    /**
+     * Code Challenge 08
+     */
+
+    public LinkedList zipLists(LinkedList linkedList1, LinkedList linkedList2) {
+        if(linkedList1.head == null && linkedList2.head == null) {
+            System.out.println("Both Lists Are Empty");
+            return null;
+        } else if (linkedList1.head == null) {
+            return linkedList2;
+        } else if (linkedList2.head == null) {
+            return linkedList1;
+        } else {
+            LinkedListNode current1 = linkedList1.head;
+            LinkedListNode current2 = linkedList2.head;
+            LinkedListNode temp1, temp2;
+
+            while (current1.getNext() != null && current2 != null) {
+
+                temp1 = current1.getNext();
+                temp2 = current2.getNext();
+                current1.setNext(current2);
+                current2.setNext(temp1);
+                current1 = temp1;
+                current2 = temp2;
+
+                size++;
+
+                if(current1.getNext() == null){
+                    current1.setNext(current2);
+                    break;
+                }
+            }
+        }
+
+        return linkedList1;
+    }
+
 }
