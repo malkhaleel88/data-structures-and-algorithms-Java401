@@ -10,4 +10,5 @@
 | Code Challenge 4  |[Fibonacci Sequence](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge04)|
 | Code Challenge 5  |[LinkedLists](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge05)|
 | Code Challenge 6  |[LinkedList Insertions](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge05)|
-| Code Challenge 7  |[Linked List-kth](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge05)|
+| Code Challenge 7  |[LinkedList-kth](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge05)|
+| Code Challenge 8  |[LinkedList Zip](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge05)|

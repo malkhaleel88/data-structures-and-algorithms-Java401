@@ -10,6 +10,8 @@ public class App {
     public static void main(String[] args) {
 
         LinkedList linkedList = new LinkedList();
+        LinkedList linkedList1 = new LinkedList();
+
         linkedList.insert("M");
         linkedList.insert("O");
         linkedList.insert("H");
@@ -37,5 +39,22 @@ public class App {
         System.out.println(linkedList.kthFromEnd(8));
         System.out.println(linkedList.kthFromEnd(5));
         System.out.println(linkedList.kthFromEnd(-2));
+
+        LinkedList linkedList3 = new LinkedList();
+        LinkedList linkedList4 = new LinkedList();
+
+        linkedList3.append("1");
+        linkedList3.append("2");
+        linkedList3.append("3");
+
+        linkedList4.append("4");
+        linkedList4.append("5");
+        linkedList4.append("6");
+
+        System.out.println(linkedList3.zipLists(linkedList3, linkedList4));
+
+
+
+
     }
 }
