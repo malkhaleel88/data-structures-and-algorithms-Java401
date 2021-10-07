@@ -166,7 +166,7 @@ class AppTest {
         testList.insert("H");
         testList.insert("A");
         assertEquals("Exception", testList.kthFromEnd(5));
-}
+    }
 
     @Test
     public void equalThanLength() {

@@ -12,3 +12,4 @@
 | Code Challenge 6  |[LinkedList Insertions](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge05)|
 | Code Challenge 7  |[LinkedList-kth](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge05)|
 | Code Challenge 8  |[LinkedList Zip](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge05)|
+| Code Challenge 10  |[Stacks and Queues](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge10)|
