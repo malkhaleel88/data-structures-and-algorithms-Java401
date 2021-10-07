@@ -4,8 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd85196f-4831-417e-a7b6-82b28c4f1a03" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/challenge05/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/challenge05/AppTest.java" afterDir="false" />
+    <list default="true" id="f355d920-9718-48bb-9a06-c18205ad5aef" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/challenge10/queue/data/QueueNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/challenge10/queue/structure/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/challenge10/stack/data/StackNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/challenge10/stack/structure/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../challenge05/.gradle/7.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../challenge05/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../challenge05/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../challenge05/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../challenge05/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../challenge05/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../challenge05/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../challenge05/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../challenge05/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../challenge05/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../challenge05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../challenge05/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../challenge05/app/src/test/java/challenge05/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../challenge05/app/src/test/java/challenge05/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +38,17 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="challenge10" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -37,7 +62,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1yreLaARB0ohcBpT5DuanFOwcSm" />
+  <component name="ProjectId" id="1zBRd0sOXtfWyTPGn1TERYnR4Pv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -50,24 +75,25 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/challenge10/queue/structure" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="inlay.hints.JAVA" />
   </component>
-  <component name="RunManager" selected="Gradle.AppTest">
-    <configuration name="AppTest" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="challenge05.App" />
-      <module name="challenge05.app.test" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu\home\malkhaleel88\Projects401\data-structures-and-algorithms-Java401\challenge10\app\src\main\java\challenge10\queue\structure" />
+      <recent name="\\wsl$\Ubuntu\home\malkhaleel88\Projects401\data-structures-and-algorithms-Java401\challenge10\app\src\main\java\challenge10\queue" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.AppTest.peekQueueTest">
+    <configuration name="AppTest.dequeueFromQueueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge05.AppTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;challenge10.AppTest.dequeueFromQueueTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -83,12 +109,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.addAfter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.emptyQueueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge05.AppTest.addAfter&quot;" />
+        <option name="scriptParameters" value="--tests &quot;challenge10.AppTest.emptyQueueTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -104,12 +130,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.addAfterlast" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.enqueueToQueueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge05.AppTest.addAfterlast&quot;" />
+        <option name="scriptParameters" value="--tests &quot;challenge10.AppTest.enqueueToQueueTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -125,12 +151,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.addBeforefirst" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.peekQueueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge05.AppTest.addBeforefirst&quot;" />
+        <option name="scriptParameters" value="--tests &quot;challenge10.AppTest.peekQueueTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -146,12 +172,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.addMultiAtEnd" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.peekStackTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge05.AppTest.addMultiAtEnd&quot;" />
+        <option name="scriptParameters" value="--tests &quot;challenge10.AppTest.peekStackTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -167,32 +193,24 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Application.AppTest" />
-      <item itemvalue="Gradle.AppTest.addAfter" />
-      <item itemvalue="Gradle.AppTest.addBeforefirst" />
-      <item itemvalue="Gradle.AppTest.addAfterlast" />
-      <item itemvalue="Gradle.AppTest.addMultiAtEnd" />
-      <item itemvalue="Gradle.AppTest" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AppTest" />
-        <item itemvalue="Gradle.AppTest.addMultiAtEnd" />
-        <item itemvalue="Gradle.AppTest.addAfterlast" />
-        <item itemvalue="Gradle.AppTest.addBeforefirst" />
-        <item itemvalue="Gradle.AppTest.addAfter" />
+        <item itemvalue="Gradle.AppTest.peekQueueTest" />
+        <item itemvalue="Gradle.AppTest.emptyQueueTest" />
+        <item itemvalue="Gradle.AppTest.dequeueFromQueueTest" />
+        <item itemvalue="Gradle.AppTest.enqueueToQueueTest" />
+        <item itemvalue="Gradle.AppTest.peekStackTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dd85196f-4831-417e-a7b6-82b28c4f1a03" name="Changes" comment="" />
-      <created>1633014099620</created>
+      <changelist id="f355d920-9718-48bb-9a06-c18205ad5aef" name="Changes" comment="" />
+      <created>1633619582898</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1633014099620</updated>
+      <updated>1633619582898</updated>
     </task>
     <servers />
   </component>
@@ -206,7 +224,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

@@ -96,7 +96,7 @@ class AppTest {
         Test.insert("80");
         Test.append("100");
         String expected = " { 80 }  --->  { 50 }  --->  { 20 }  --->  { 100 }  --->  NULL ";
-<<<<<<< HEAD
+
         assertEquals(expected, Test.toString());
     }
 
@@ -112,23 +112,6 @@ class AppTest {
         assertEquals(expected, Test.toString());
     }
 
-=======
-        assertEquals(expected, Test.toString());
-    }
-
-    @Test  public void addMultiAtEnd() {
-        LinkedList Test = new LinkedList();
-        Test.insert("20");
-        Test.insert("50");
-        Test.insert("80");
-        Test.append("100");
-        Test.append("10");
-        Test.append("90");
-        String expected = " { 80 }  --->  { 50 }  --->  { 20 }  --->  { 100 }  --->  { 10 }  --->  { 90 }  --->  NULL ";
-        assertEquals(expected, Test.toString());
-    }
-
->>>>>>> 17a3723142e12dc25d5d5bb8de5a02e63872e7b8
     @Test  public void addBefore() {
         LinkedList Test = new LinkedList();
         Test.insert("20");
@@ -183,7 +166,7 @@ class AppTest {
         testList.insert("H");
         testList.insert("A");
         assertEquals("Exception", testList.kthFromEnd(5));
-}
+    }
 
     @Test
     public void equalThanLength() {
