@@ -53,5 +53,30 @@ public class App {
         System.out.println(queue.dequeue());
         System.out.println(queue.dequeue());
 
+        System.out.println("=========================================");
+
+        PseudoQueue pseudoQueue = new PseudoQueue();
+
+        pseudoQueue.enqueue("M");
+        pseudoQueue.enqueue("O");
+        pseudoQueue.enqueue("H");
+        pseudoQueue.enqueue("A");
+        pseudoQueue.enqueue("M");
+        pseudoQueue.enqueue("M");
+        pseudoQueue.enqueue("A");
+        pseudoQueue.enqueue("D");
+
+
+        System.out.println(pseudoQueue.dequeue());
+        System.out.println(pseudoQueue.dequeue());
+        System.out.println(pseudoQueue.dequeue());
+        System.out.println(pseudoQueue.dequeue());
+        System.out.println(pseudoQueue.dequeue());
+        System.out.println(pseudoQueue.dequeue());
+        System.out.println(pseudoQueue.dequeue());
+        System.out.println(pseudoQueue.dequeue());
+        System.out.println(pseudoQueue.dequeue());
+
     }
+
 }

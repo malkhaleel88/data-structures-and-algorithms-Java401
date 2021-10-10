@@ -5,22 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f355d920-9718-48bb-9a06-c18205ad5aef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/challenge10/queue/data/QueueNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/challenge10/queue/structure/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/challenge10/stack/data/StackNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/challenge10/stack/structure/Stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenge05/.gradle/7.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../challenge05/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenge05/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../challenge05/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenge05/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../challenge05/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenge05/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../challenge05/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenge05/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../challenge05/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenge05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../challenge05/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../challenge05/app/src/test/java/challenge05/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../challenge05/app/src/test/java/challenge05/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/challenge10/PseudoQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/challenge10/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/challenge10/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/challenge10/stack/structure/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/challenge10/stack/structure/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/challenge10/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/challenge10/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,13 +77,47 @@
       <recent name="\\wsl$\Ubuntu\home\malkhaleel88\Projects401\data-structures-and-algorithms-Java401\challenge10\app\src\main\java\challenge10\queue" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AppTest.peekQueueTest">
-    <configuration name="AppTest.dequeueFromQueueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="challenge10.App" />
+      <module name="challenge10.app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="challenge10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.PesudoDequeueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge10.AppTest.dequeueFromQueueTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;challenge10.AppTest.PesudoDequeueTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AppTest.PseudoEnqueueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;challenge10.AppTest.PseudoEnqueueTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -130,27 +154,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.enqueueToQueueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge10.AppTest.enqueueToQueueTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="AppTest.peekQueueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -172,34 +175,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.peekStackTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge10.AppTest.peekStackTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="Gradle.AppTest.PesudoDequeueTest" />
+        <item itemvalue="Gradle.AppTest.PseudoEnqueueTest" />
         <item itemvalue="Gradle.AppTest.peekQueueTest" />
         <item itemvalue="Gradle.AppTest.emptyQueueTest" />
-        <item itemvalue="Gradle.AppTest.dequeueFromQueueTest" />
-        <item itemvalue="Gradle.AppTest.enqueueToQueueTest" />
-        <item itemvalue="Gradle.AppTest.peekStackTest" />
       </list>
     </recent_temporary>
   </component>
@@ -224,6 +206,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
