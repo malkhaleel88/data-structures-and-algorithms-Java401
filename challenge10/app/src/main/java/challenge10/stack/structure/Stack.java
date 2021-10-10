@@ -12,6 +12,14 @@ public class Stack {
 
     }
 
+    public StackNode getTop() {
+        return top;
+    }
+
+    public void setTop(StackNode top) {
+        this.top = top;
+    }
+
     /**
      *  Code Challenge 10 Stack
     */

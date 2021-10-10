@@ -118,4 +118,39 @@ class AppTest {
         queueTest.dequeue();
         assertEquals("O",queueTest.peek());
     }
+
+    /**
+     *  Code Challenge 11 TEST
+     */
+
+    @Test
+    public void PseudoEnqueueTest() {
+        PseudoQueue testPesudoQueue = new PseudoQueue();
+
+        testPesudoQueue.enqueue("M");
+        testPesudoQueue.enqueue("O");
+        testPesudoQueue.enqueue("H");
+        testPesudoQueue.enqueue("A");
+
+        assertEquals("stack1=Stack{top=StackNode{data='A', next=StackNode{data='H', next=StackNode{data='O', next=StackNode{data='M', next=null}}}}}", testPesudoQueue.toString());
+    }
+
+    @Test
+    public void PesudoDequeueTest(){
+        PseudoQueue testPesudoQueue = new PseudoQueue();
+
+        testPesudoQueue.enqueue("M");
+        testPesudoQueue.enqueue("O");
+        testPesudoQueue.enqueue("H");
+        testPesudoQueue.enqueue("A");
+
+        assertEquals("M", testPesudoQueue.dequeue());
+
+        testPesudoQueue.dequeue();
+        testPesudoQueue.dequeue();
+        testPesudoQueue.dequeue();
+
+        assertEquals("stack1=Stack{top=null}",testPesudoQueue.toString());
+        assertEquals("Both Stacks Empty", testPesudoQueue.dequeue());
+    }
 }
