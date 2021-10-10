@@ -1,4 +1,4 @@
-# **Stacks and Queues**
+# **10.Stacks and Queues**
 
 * **Stack** is a linear data structure in which elements can be inserted and deleted only from one side of the list, called the top. A stack follows the *LIFO* (Last In First Out) principle.The insertion of an element into stack is called ***push*** operation, and deletion of an element from the stack is called ***pop*** operation.
 
@@ -40,7 +40,7 @@
 
 -------------------------------------------------------------------------------------------------------------
 
-# **Stack-Queue Pseudo**
+# **11.Stack-Queue Pseudo**
 
 # **Challenge Summary**
 
