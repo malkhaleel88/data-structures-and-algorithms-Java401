@@ -77,6 +77,33 @@ public class App {
         System.out.println(pseudoQueue.dequeue());
         System.out.println(pseudoQueue.dequeue());
 
+        System.out.println("=========================================");
+
+        AnimalShelter animalShelter = new AnimalShelter();
+
+        Animal cat1 = new Cat("miao");
+        Cat cat2 = new Cat("nemnem");
+        Cat cat3 = new Cat("meshmesh");
+        Animal dog1 = new Dog("woof");
+        Dog dog2 = new Dog("husky");
+        Dog dog3 = new Dog("wolf");
+
+        animalShelter.enqueue(cat1);
+        animalShelter.enqueue(cat2);
+        animalShelter.enqueue(cat3);
+        animalShelter.enqueue(dog1);
+        animalShelter.enqueue(dog2);
+        animalShelter.enqueue(dog3);
+
+        System.out.println(animalShelter);
+
+        animalShelter.dequeue("cat");
+        System.out.println(animalShelter);
+
+        animalShelter.dequeue("dog");
+        System.out.println(animalShelter);
     }
+
+
 
 }

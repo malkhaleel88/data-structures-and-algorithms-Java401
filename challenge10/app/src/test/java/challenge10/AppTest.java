@@ -153,4 +153,46 @@ class AppTest {
         assertEquals("stack1=Stack{top=null}",testPesudoQueue.toString());
         assertEquals("Both Stacks Empty", testPesudoQueue.dequeue());
     }
+
+    /**
+     *  Code Challenge 12 TEST
+     */
+
+
+    @Test
+    public void enqueueDequeueAnimalShelterTest() {
+
+        AnimalShelter shelterTest = new AnimalShelter();
+
+        Animal cat1 = new Cat("miao");
+        Cat cat2 = new Cat("nemnem");
+        Animal dog1 = new Dog("woof");
+        Dog dog2 = new Dog("husky");
+
+        shelterTest.enqueue(cat1);
+        shelterTest.enqueue(cat2);
+        shelterTest.enqueue(dog1);
+        shelterTest.enqueue(dog2);
+        assertEquals("AnimalShelter{catQueue=Queue{front=QueueNode{data='miao', next=QueueNode{data='nemnem', next=null}}, rear=QueueNode{data='nemnem', next=null}}, dogQueue=Queue{front=QueueNode{data='woof', next=QueueNode{data='husky', next=null}}, rear=QueueNode{data='husky', next=null}}}", shelterTest.toString());
+
+        assertFalse(shelterTest.catQueue.isEmpty());
+        assertFalse(shelterTest.dogQueue.isEmpty());
+
+        shelterTest.dequeue("cat");
+        assertEquals("AnimalShelter{catQueue=Queue{front=QueueNode{data='nemnem', next=null}, rear=QueueNode{data='nemnem', next=null}}, dogQueue=Queue{front=QueueNode{data='woof', next=QueueNode{data='husky', next=null}}, rear=QueueNode{data='husky', next=null}}}", shelterTest.toString());
+
+        shelterTest.dequeue("dog");
+        assertEquals("AnimalShelter{catQueue=Queue{front=QueueNode{data='nemnem', next=null}, rear=QueueNode{data='nemnem', next=null}}, dogQueue=Queue{front=QueueNode{data='husky', next=null}, rear=QueueNode{data='husky', next=null}}}", shelterTest.toString());
+
+        shelterTest.dequeue("cat");
+        shelterTest.dequeue("dog");
+        assertEquals("AnimalShelter{catQueue=Queue{front=null, rear=QueueNode{data='nemnem', next=null}}, dogQueue=Queue{front=null, rear=QueueNode{data='husky', next=null}}}", shelterTest.toString());
+
+        assertTrue(shelterTest.catQueue.isEmpty());
+        assertTrue(shelterTest.dogQueue.isEmpty());
+
+        assertNull(shelterTest.dequeue("cat"));
+        assertNull(shelterTest.dequeue("dog"));
+    }
+
 }

@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f355d920-9718-48bb-9a06-c18205ad5aef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/challenge10/PseudoQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/challenge10/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/challenge10/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/challenge10/stack/structure/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/challenge10/stack/structure/Stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/challenge10/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/challenge10/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +72,7 @@
       <recent name="\\wsl$\Ubuntu\home\malkhaleel88\Projects401\data-structures-and-algorithms-Java401\challenge10\app\src\main\java\challenge10\queue" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Gradle.AppTest.enqueueDequeueAnimalShelterTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="challenge10.App" />
       <module name="challenge10.app.main" />
@@ -91,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.PesudoDequeueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge10.AppTest.PesudoDequeueTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;challenge10.AppTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -112,12 +107,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.PseudoEnqueueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.dequeueAnimalShelterTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge10.AppTest.PseudoEnqueueTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;challenge10.AppTest.dequeueAnimalShelterTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -133,12 +128,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.emptyQueueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.enqueueAnimalShelterTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge10.AppTest.emptyQueueTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;challenge10.AppTest.enqueueAnimalShelterTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -154,12 +149,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.peekQueueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.enqueueDequeueAnimalShelterTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge10.AppTest.peekQueueTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;challenge10.AppTest.enqueueDequeueAnimalShelterTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -177,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AppTest.enqueueDequeueAnimalShelterTest" />
+        <item itemvalue="Gradle.AppTest.dequeueAnimalShelterTest" />
+        <item itemvalue="Gradle.AppTest.enqueueAnimalShelterTest" />
+        <item itemvalue="Gradle.AppTest" />
         <item itemvalue="Application.App" />
-        <item itemvalue="Gradle.AppTest.PesudoDequeueTest" />
-        <item itemvalue="Gradle.AppTest.PseudoEnqueueTest" />
-        <item itemvalue="Gradle.AppTest.peekQueueTest" />
-        <item itemvalue="Gradle.AppTest.emptyQueueTest" />
       </list>
     </recent_temporary>
   </component>

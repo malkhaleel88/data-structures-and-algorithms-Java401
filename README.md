@@ -14,3 +14,4 @@
 | Code Challenge 8  |[LinkedList Zip](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge05)|
 | Code Challenge 10  |[Stacks and Queues](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge10)|
 | Code Challenge 11  |[Stack-Queue Pseudo](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge10)|
+| Code Challenge 12  |[Stack-Queue Animal-Shelter](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge10)|
