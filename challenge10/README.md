@@ -71,12 +71,15 @@
 
 # **12.Stack-Queue Animal-Shelter**
 
-# **Challenge Summary**
+## **Challenge Summary**
 
-- Implement a queue by using two stacks
-- Create 2Methods:
-   1. enqueue : Inserts value into the PseudoQueue, using a first-in, first-out approach.
-   2. dequeue : Extracts a value from the PseudoQueue, using a first-in, first-out approach.
+- Create an AnimalShelter class that contains two queues the first one for cats and the second one for dogs. Also adds to the queues or removes from queues based on the pref type.
+
+### **Methods**
+
+* `enqueue(Animal animal)`: This method accepts A Animal parameter. It has if-else if- else statement to check the type of the animal to determine which queue it should add to.
+
+* `dequeue(String pref)`: This method accepts a String parameter and return Animal value. It has if-else if- else statement to compare the string parameter with the specific word to direct the removal process in which queue.
 ## **Whiteboard Process**
 
 ![Insert before](./assets/stack-queue-animal-shelter.jpg)
@@ -94,5 +97,5 @@
 
  **Space: O(1)**
 
- **Time: O(n)**
+ **Time: O(1)**
  
