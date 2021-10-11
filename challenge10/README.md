@@ -67,3 +67,32 @@
 
  **Time: O(n)**
  
+------------------------------------------------------------------------------------------------------------
+
+# **12.Stack-Queue Animal-Shelter**
+
+# **Challenge Summary**
+
+- Implement a queue by using two stacks
+- Create 2Methods:
+   1. enqueue : Inserts value into the PseudoQueue, using a first-in, first-out approach.
+   2. dequeue : Extracts a value from the PseudoQueue, using a first-in, first-out approach.
+## **Whiteboard Process**
+
+![Insert before](./assets/stack-queue-animal-shelter.jpg)
+
+
+## **Approach & Efficiency**
+
+- **Enqueue** 
+
+ **Space: O(1)**
+
+ **Time: O(1)**
+
+- **Dequeue**
+
+ **Space: O(1)**
+
+ **Time: O(n)**
+ 
