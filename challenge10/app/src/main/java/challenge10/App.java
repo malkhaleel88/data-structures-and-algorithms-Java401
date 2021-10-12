@@ -102,8 +102,16 @@ public class App {
 
         animalShelter.dequeue("dog");
         System.out.println(animalShelter);
+
+        System.out.println("=========================================");
+
+        StackQueueBrackets stackQueueBrackets = new StackQueueBrackets();
+
+        System.out.println(stackQueueBrackets.validateBrackets("{}}"));
+        System.out.println(stackQueueBrackets.validateBrackets("(){}[[]]"));
+        System.out.println(stackQueueBrackets.validateBrackets("{}{Code}[Fellows](())"));
+        System.out.println(stackQueueBrackets.validateBrackets("{(})"));
+
     }
-
-
 
 }

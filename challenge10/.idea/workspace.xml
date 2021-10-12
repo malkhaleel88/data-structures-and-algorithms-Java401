@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f355d920-9718-48bb-9a06-c18205ad5aef" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/challenge10/StackQueueBrackets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/challenge10/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/challenge10/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/challenge10/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/challenge10/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,11 +66,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/challenge10/queue/structure" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="inlay.hints.JAVA" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -72,20 +79,7 @@
       <recent name="\\wsl$\Ubuntu\home\malkhaleel88\Projects401\data-structures-and-algorithms-Java401\challenge10\app\src\main\java\challenge10\queue" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AppTest.enqueueDequeueAnimalShelterTest">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="challenge10.App" />
-      <module name="challenge10.app.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="challenge10.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.AppTest.validateBracketsTest">
     <configuration name="AppTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -170,13 +164,34 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="AppTest.validateBracketsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;challenge10.AppTest.validateBracketsTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AppTest.validateBracketsTest" />
         <item itemvalue="Gradle.AppTest.enqueueDequeueAnimalShelterTest" />
         <item itemvalue="Gradle.AppTest.dequeueAnimalShelterTest" />
         <item itemvalue="Gradle.AppTest.enqueueAnimalShelterTest" />
         <item itemvalue="Gradle.AppTest" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -188,8 +203,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633619582898</updated>
+      <workItem from="1634055384724" duration="437000" />
+      <workItem from="1634055855909" duration="167000" />
+      <workItem from="1634056048719" duration="6471000" />
+      <workItem from="1634062637046" duration="823000" />
+      <workItem from="1634064047269" duration="940000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

@@ -48,9 +48,10 @@
 - Create 2Methods:
    1. enqueue : Inserts value into the PseudoQueue, using a first-in, first-out approach.
    2. dequeue : Extracts a value from the PseudoQueue, using a first-in, first-out approach.
+
 ## **Whiteboard Process**
 
-![Insert before](./assets/stack-queue-pseudo.jpg)
+![Stack-Queue Pseudo](./assets/stack-queue-pseudo.jpg)
 
 
 ## **Approach & Efficiency**
@@ -82,7 +83,7 @@
 * `dequeue(String pref)`: This method accepts a String parameter and return Animal value. It has if-else if- else statement to compare the string parameter with the specific word to direct the removal process in which queue.
 ## **Whiteboard Process**
 
-![Insert before](./assets/stack-queue-animal-shelter.jpg)
+![Stack-Queue Animal-Shelter](./assets/stack-queue-animal-shelter.jpg)
 
 
 ## **Approach & Efficiency**
@@ -99,3 +100,22 @@
 
  **Time: O(1)**
  
+----------------------------------------------------------------------------------------------------------
+
+# **13.Stack-Queue Brackets**
+
+## **Challenge Summary**
+
+* Write a method called validate brackets that accepts a string parameter and return a boolean value representing whether the brackets in the string are balanced or not.
+
+## **Whiteboard Process**
+
+![Stack-Queue Brackets](./assets/stack-queue-brackets.jpg)
+
+
+## **Approach & Efficiency**
+
+**Space: O(n)**
+
+**Time: O(n)**
+
