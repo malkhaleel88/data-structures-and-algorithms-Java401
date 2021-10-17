@@ -4,7 +4,9 @@
 package challenge15;
 
 
+import challenge15.data.BinaryTreeNode;
 import challenge15.structure.BinarySearchTree;
+import challenge15.structure.BinaryTree;
 import com.google.common.base.Verify;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -106,5 +108,33 @@ class AppTest {
 
         assertTrue(binaryTreeTest.contains(42));
         assertFalse(binaryTreeTest.contains(7));
+    }
+
+    /**
+     *  Code Challenge 16 Test
+     */
+
+    @Test
+    public void maxValueTestempty() {
+        BinaryTree binaryTreeTest = new BinaryTree();
+
+        assertEquals(0, binaryTreeTest.treeMax());
+
+    }
+
+    @Test
+    public void maxValueTest(){
+        BinaryTree binaryTreeTest = new BinaryTree();
+
+        binaryTreeTest.setRoot(new BinaryTreeNode(7));
+        assertEquals(7,binaryTreeTest.treeMax());
+
+        binaryTreeTest.getRoot().setLeftNode(new BinaryTreeNode(9));
+        binaryTreeTest.getRoot().setRightNode(new BinaryTreeNode(11));
+        assertEquals(11,binaryTreeTest.treeMax());
+
+        binaryTreeTest.getRoot().getLeftNode().setLeftNode(new BinaryTreeNode(13));
+        binaryTreeTest.getRoot().getLeftNode().setRightNode(new BinaryTreeNode((1)));
+        assertEquals(13,binaryTreeTest.treeMax());
     }
 }

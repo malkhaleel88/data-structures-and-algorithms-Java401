@@ -4,7 +4,7 @@ import challenge15.data.BinaryTreeNode;
 import java.util.ArrayList;
 
 
-public class BinaryTree<T> {
+public class BinaryTree<T extends Comparable<T>> {
 
     protected BinaryTreeNode<T> root;
 
@@ -80,10 +80,38 @@ public class BinaryTree<T> {
         postOrderList.add(root.getData());
     }
 
+    /**
+     *  Code Challenge 16
+     */
+
+    // ===== treeMax Method ===== //
+
+    public int treeMax(){
+        if (isEmpty()) {
+            return 0;
+        }
+        int maxValue = 0;
+        ArrayList<T> findMax = preOrder();
+        for (int i = 0; i < findMax.size(); i++) {
+            if(Integer.parseInt(findMax.get(i) + "") > maxValue){
+                maxValue = Integer.parseInt(findMax.get(i) + "");
+            }
+        }
+        return  maxValue;
+    }
+
     // ===== IsEmpty Method ===== //
 
     public boolean isEmpty() {
         return root == null;
+    }
+
+    public BinaryTreeNode<T> getRoot() {
+        return root;
+    }
+
+    public void setRoot(BinaryTreeNode<T> root) {
+        this.root = root;
     }
 
     @Override

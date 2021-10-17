@@ -37,6 +37,13 @@ public class App {
         System.out.print("Depth First Traversal Post-order => ");
         System.out.println(binarySearchTree.postOrder());
 
+        /**
+         *  Code Challenge 16
+         */
+
+        System.out.print("The Maximum Value Of Binary Tree Is => ");
+        System.out.println(binarySearchTree.treeMax());
+
 
     }
 }
