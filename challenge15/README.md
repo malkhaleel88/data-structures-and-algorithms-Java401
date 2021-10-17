@@ -60,3 +60,27 @@ with the following additional methods:
     - Returns: boolean indicating whether or not the value is in the tree at least once.
 
 -------------------------------------------------------------------------------------------------------------
+
+# **16.Tree Max**
+
+## **Challenge Summary**
+
+- We asked to write a method that finds the maximum numeric value stored in the binary tree.
+  * Method: **treeMax()**
+  * Arguments: none
+  * Returns: number
+
+## **Whiteboard Process**
+
+![Tree Max](./assets/tree-max.jpg)
+
+## **Approach & Efficiency**
+
+- **Space: O(n)**
+
+- **Time: O(n)**
+
+
+
+
+
