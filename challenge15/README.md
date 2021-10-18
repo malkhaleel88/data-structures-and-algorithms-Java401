@@ -80,7 +80,22 @@ with the following additional methods:
 
 - **Time: O(n)**
 
+-------------------------------------------------------------------------------------------------------------
 
+# **17.Tree Breadth First**
 
+## **Challenge Summary**
 
+- We asked to write  breadth first method for breadth first traversal in a binary tree.
+  * Method: **breadthFirst(tree)**
+  * Arguments: tree
+  * Returns: list of all values in the tree, in the order they were encountered
+## **Whiteboard Process**
 
+![Tree Breadth First](./assets/tree-breadth-first.jpg)
+
+## **Approach & Efficiency**
+
+- **Space: O(n)**
+
+- **Time: O(n)**

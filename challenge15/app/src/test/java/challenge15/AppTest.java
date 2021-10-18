@@ -137,4 +137,38 @@ class AppTest {
         binaryTreeTest.getRoot().getLeftNode().setRightNode(new BinaryTreeNode((1)));
         assertEquals(13,binaryTreeTest.treeMax());
     }
+
+    /**
+     *  Code Challenge 17 Test
+     */
+
+    @Test
+    public void breadthFirstEmptyTreeTest(){
+        BinaryTree binaryTreeTest = new BinaryTree();
+
+        assertNull(binaryTreeTest.breadthFirst(binaryTreeTest));
+    }
+
+    @Test
+    public void breadthFirstValuesInTreeTest(){
+        BinaryTree binaryTreeTest = new BinaryTree();
+
+        binaryTreeTest.setRoot(new BinaryTreeNode(7));
+        assertEquals("[7]", binaryTreeTest.breadthFirst(binaryTreeTest).toString());
+
+        binaryTreeTest.getRoot().setLeftNode(new BinaryTreeNode(9));
+        binaryTreeTest.getRoot().setRightNode(new BinaryTreeNode(11));
+        assertEquals("[7, 9, 11]", binaryTreeTest.breadthFirst(binaryTreeTest).toString());
+
+        binaryTreeTest.getRoot().getLeftNode().setLeftNode(new BinaryTreeNode(13));
+        assertEquals("[7, 9, 11, 13]", binaryTreeTest.breadthFirst(binaryTreeTest).toString());
+
+        binaryTreeTest.getRoot().getLeftNode().getLeftNode().setLeftNode(new BinaryTreeNode(20));
+        assertEquals("[7, 9, 11, 13, 20]", binaryTreeTest.breadthFirst(binaryTreeTest).toString());
+
+        binaryTreeTest.getRoot().getRightNode().setLeftNode(new BinaryTreeNode(90));
+        assertEquals("[7, 9, 11, 13, 90, 20]", binaryTreeTest.breadthFirst(binaryTreeTest).toString());
+
+    }
+
 }

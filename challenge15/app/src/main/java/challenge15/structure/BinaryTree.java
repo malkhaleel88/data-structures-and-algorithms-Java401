@@ -2,6 +2,8 @@ package challenge15.structure;
 
 import challenge15.data.BinaryTreeNode;
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 
 
 public class BinaryTree<T extends Comparable<T>> {
@@ -99,6 +101,36 @@ public class BinaryTree<T extends Comparable<T>> {
         }
         return  maxValue;
     }
+
+    /**
+     *  Code Challenge 17
+     */
+
+    // ====== Breadth First Traversal Method ====== //
+
+    public ArrayList<T> breadthFirst(BinaryTree<T> binaryTree) {
+        if (isEmpty()) {
+            return null;
+        }
+        ArrayList<T> breadthList = new ArrayList<>();
+        Queue<BinaryTreeNode<T>> treeQueue = new LinkedList<>();
+        BinaryTreeNode<T> newNode = binaryTree.root;
+
+        treeQueue.add(newNode);
+
+        while(!treeQueue.isEmpty()){
+            if(treeQueue.peek().getLeftNode() != null){
+                treeQueue.add(treeQueue.peek().getLeftNode());
+            }
+            if(treeQueue.peek().getRightNode() != null){
+                treeQueue.add(treeQueue.peek().getRightNode());
+            }
+            breadthList.add(treeQueue.remove().getData());
+        }
+
+        return breadthList;
+    }
+
 
     // ===== IsEmpty Method ===== //
 

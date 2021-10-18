@@ -44,6 +44,11 @@ public class App {
         System.out.print("The Maximum Value Of Binary Tree Is => ");
         System.out.println(binarySearchTree.treeMax());
 
+        /**
+         *  Code Challenge 17
+         */
 
+        System.out.print("Breadth First Traversal => ");
+        System.out.println(binarySearchTree.breadthFirst(binarySearchTree));
     }
 }
