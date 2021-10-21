@@ -4,6 +4,7 @@
 package challenge15;
 
 import challenge15.structure.BinarySearchTree;
+import challenge15.structure.KaryTree;
 
 
 public class App {
@@ -50,5 +51,32 @@ public class App {
 
         System.out.print("Breadth First Traversal => ");
         System.out.println(binarySearchTree.breadthFirst(binarySearchTree));
+
+        /**
+         *  Code Challenge 18
+         */
+
+        KaryTree<Integer> KaryTree = new KaryTree<>(3);
+        KaryTree.add(1);
+        KaryTree.add(5);
+        KaryTree.add(15);
+        KaryTree.add(30);
+        KaryTree.add(7);
+        KaryTree.add(20);
+        KaryTree.add(8);
+        KaryTree.add(60);
+        KaryTree.add(3);
+        KaryTree.add(12);
+        System.out.println(KaryTree);
+
+        System.out.println(KaryTree.fizzBuzzTree(KaryTree));
+
+        /**
+         *  Code Challenge 19
+         */
+
+        System.out.println(binarySearchTree.sumOfOdd());
     }
+
+
 }
