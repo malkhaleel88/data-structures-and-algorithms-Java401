@@ -7,6 +7,7 @@ package challenge15;
 import challenge15.data.BinaryTreeNode;
 import challenge15.structure.BinarySearchTree;
 import challenge15.structure.BinaryTree;
+import challenge15.structure.KaryTree;
 import com.google.common.base.Verify;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -168,6 +169,30 @@ class AppTest {
 
         binaryTreeTest.getRoot().getRightNode().setLeftNode(new BinaryTreeNode(90));
         assertEquals("[7, 9, 11, 13, 90, 20]", binaryTreeTest.breadthFirst(binaryTreeTest).toString());
+
+    }
+
+    /**
+     *  Code Challenge 19 Test
+     */
+
+    @Test
+    public void kTreeFizzBuzzTest(){
+
+        KaryTree kTree = new KaryTree(2);
+
+        kTree.add(1);
+        kTree.add(2);
+        assertEquals("{  1   2   }",kTree.fizzBuzzTree(kTree).toString() );
+
+        kTree.add(3);
+        assertEquals("{  1   2    Fizz   }", kTree.fizzBuzzTree(kTree).toString());
+
+        kTree.add(5);
+        assertEquals("{  1   2   Buzz     Fizz   }", kTree.fizzBuzzTree(kTree).toString());
+
+        kTree.add(15);
+        assertEquals("{  1   2   Buzz    FizzBuzz     Fizz   }", kTree.fizzBuzzTree(kTree).toString());
 
     }
 

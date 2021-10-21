@@ -19,3 +19,4 @@
 | Code Challenge 15  |[Trees](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge15)|
 | Code Challenge 16  |[Tree Max](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge15)|
 | Code Challenge 17  |[Tree Breadth First](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge15)|
+| Code Challenge 18  |[Tree Fizz Buzz](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge15)|

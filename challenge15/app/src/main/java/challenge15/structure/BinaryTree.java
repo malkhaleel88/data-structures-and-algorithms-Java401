@@ -131,6 +131,26 @@ public class BinaryTree<T extends Comparable<T>> {
         return breadthList;
     }
 
+    /**
+     *  Code Challenge 19
+     */
+
+    // ====== Sum Of Odd Number In Tree Method ====== //
+
+  public int sumOfOdd() {
+      if (isEmpty()) {
+          return 0;
+      }
+      ArrayList<T> treeList = preOrder();
+      int sum = 0;
+
+      for (int i = 0; i < treeList.size(); i++) {
+          if (Integer.parseInt(treeList.get(i) + "") % 2 != 0) {
+              sum = sum + Integer.parseInt(treeList.get(i) + "");
+          }
+      }
+      return sum;
+  }
 
     // ===== IsEmpty Method ===== //
 
