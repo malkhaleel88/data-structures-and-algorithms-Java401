@@ -51,22 +51,22 @@ class AppTest {
     }
 
     @Test
-    public void mergeSortTest2() {
+    public void mergeSortTest2(){
 
-        int[] mergeArr2 = {20, 18, 12, 8, 5, -2};
+        int [] mergeArr2 = {5, 12, 7, 5, 5, 7};
         MergeSort mergeSort = new MergeSort();
         mergeSort.mergeSort(mergeArr2);
-        assertEquals("[-2, 5, 8, 12, 18, 20]", Arrays.toString(mergeArr2));
+        assertEquals("[5, 5, 5, 7, 7, 12]",Arrays.toString(mergeArr2));
     }
 
 
     @Test
-    public void mergeSortTest5() {
+    public void mergeSortTest3() {
 
-        int[] mergeArr5 = {2};
+        int[] mergeArr3 = {2};
         MergeSort mergeSort = new MergeSort();
-        mergeSort.mergeSort(mergeArr5);
-        assertEquals("[2]", Arrays.toString(mergeArr5));
+        mergeSort.mergeSort(mergeArr3);
+        assertEquals("[2]", Arrays.toString(mergeArr3));
     }
 
 
