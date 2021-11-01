@@ -1,4 +1,4 @@
-# **Insertion Sort**
+# **Code Challenge 26: Insertion Sort**
 
 # **Challenge Summary**
 
@@ -15,3 +15,20 @@ This challenge relates to creating a method called `insartionSort (int [] arr) `
 - Space : O(1)
 
 -------------------------------------------------------------------------------------------------------------
+
+# **Code Challenge 27: Merge Sort**
+
+# **Challenge Summary**
+
+This challenge relates to creating a method called mergeSort (int [] arr) that takes an int array as a parameter. The method divides the array into two parts and each part is also divided into two parts until breaking each element into a single part.
+Then sort the elements from smallest to largest and merge the divided sorted array together. In the end, the array has been sorted.
+
+## **Whiteboard Process**
+
+![Merge Sort](assets/merge-sort.jpg)
+
+## **Approach & Efficiency**
+
+- Time : O(nlog(n))
+
+- Space : O(1)

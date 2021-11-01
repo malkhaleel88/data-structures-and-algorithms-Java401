@@ -21,3 +21,4 @@
 | Code Challenge 17  |[Tree Breadth First](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge15)|
 | Code Challenge 18  |[Tree Fizz Buzz](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge15)|
 | Code Challenge 26  |[Insertion Sort](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge26)|
+| Code Challenge 27  |[Merge Sort](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge26)|

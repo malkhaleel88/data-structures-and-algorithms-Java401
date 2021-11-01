@@ -11,30 +11,63 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
 
-        /**
-         *  Code Challenge 26 Test
-         */
+    /**
+     * Code Challenge 26 Test
+     */
 
-        @Test
-        public void insertionSortTest1(){
+    @Test
+    public void insertionSortTest1() {
 
-            int[] arr1 = {8, 4, 23, 42, 16, 15};
+        int[] arr1 = {8, 4, 23, 42, 16, 15};
 
-            InsertionSort insertionSort = new InsertionSort();
-            insertionSort.insertionSort(arr1);
-            assertEquals("[4, 8, 15, 16, 23, 42]", Arrays.toString(arr1));
-        }
+        InsertionSort insertionSort = new InsertionSort();
+        insertionSort.insertionSort(arr1);
+        assertEquals("[4, 8, 15, 16, 23, 42]", Arrays.toString(arr1));
+    }
 
 
-        @Test
-        public void insertionSortTest2(){
+    @Test
+    public void insertionSortTest2() {
 
-            int [] arr2 ={20, 18, 12, 8, 5, -2};
+        int[] arr2 = {20, 18, 12, 8, 5, -2};
 
-            InsertionSort insertionSort = new InsertionSort();
-            insertionSort.insertionSort(arr2);
-            assertEquals("[-2, 5, 8, 12, 18, 20]", Arrays.toString(arr2));
-
-        }
+        InsertionSort insertionSort = new InsertionSort();
+        insertionSort.insertionSort(arr2);
+        assertEquals("[-2, 5, 8, 12, 18, 20]", Arrays.toString(arr2));
 
     }
+
+    /**
+     * Code Challenge 27 Test
+     */
+
+    @Test
+    public void mergeSortTest1() {
+
+        int[] mergeArr1 = {8, 4, 23, 42, 16, 15};
+        MergeSort mergeSort = new MergeSort();
+        mergeSort.mergeSort(mergeArr1);
+        assertEquals("[4, 8, 15, 16, 23, 42]", Arrays.toString(mergeArr1));
+    }
+
+    @Test
+    public void mergeSortTest2() {
+
+        int[] mergeArr2 = {20, 18, 12, 8, 5, -2};
+        MergeSort mergeSort = new MergeSort();
+        mergeSort.mergeSort(mergeArr2);
+        assertEquals("[-2, 5, 8, 12, 18, 20]", Arrays.toString(mergeArr2));
+    }
+
+
+    @Test
+    public void mergeSortTest5() {
+
+        int[] mergeArr5 = {2};
+        MergeSort mergeSort = new MergeSort();
+        mergeSort.mergeSort(mergeArr5);
+        assertEquals("[2]", Arrays.toString(mergeArr5));
+    }
+
+
+}

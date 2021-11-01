@@ -20,5 +20,14 @@ public class App {
 
         System.out.println(Arrays.toString(array));
 
+        /**
+         *  Code Challenge 27
+         */
+
+        MergeSort mergeSort = new MergeSort();
+        mergeSort.mergeSort(array);
+
+        System.out.println(Arrays.toString(array));
+
     }
 }
