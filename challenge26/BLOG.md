@@ -6,7 +6,7 @@ This challenge relates to creating a method called `insartionSort (int [] arr) `
 
 ## **Whiteboard Process**
 
-![Insertion Sort](/assets/insertion-sort.jpg)
+![Insertion Sort](assets/insertion-sort.jpg)
 
 ## **Approach & Efficiency**
 
