@@ -31,4 +31,4 @@ Then sort the elements from smallest to largest and merge the divided sorted arr
 
 - Time : O(nlog(n))
 
-- Space : O(1)
+- Space : O(n)
