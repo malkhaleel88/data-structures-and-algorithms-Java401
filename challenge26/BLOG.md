@@ -31,4 +31,22 @@ Then sort the elements from smallest to largest and merge the divided sorted arr
 
 - Time : O(nlog(n))
 
+- Space : O(n)
+
+-------------------------------------------------------------------------------------------------------------
+
+# **Code Challenge 28: Quick Sort**
+
+# **Challenge Summary**
+
+quicksort algorithm repeatedly divides an un-sorted section into a lower order sub-section and a higher order sub-section by comparing to a pivot element. At the end of recursion, we get sorted array.
+
+## **Whiteboard Process**
+
+![Quick Sort](assets/quick-sort.jpg)
+
+## **Approach & Efficiency**
+
+- Time : O(nlog(n))
+
 - Space : O(1)

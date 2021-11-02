@@ -45,6 +45,7 @@ class AppTest {
     public void mergeSortTest1() {
 
         int[] mergeArr1 = {8, 4, 23, 42, 16, 15};
+
         MergeSort mergeSort = new MergeSort();
         mergeSort.mergeSort(mergeArr1);
         assertEquals("[4, 8, 15, 16, 23, 42]", Arrays.toString(mergeArr1));
@@ -54,6 +55,7 @@ class AppTest {
     public void mergeSortTest2(){
 
         int [] mergeArr2 = {5, 12, 7, 5, 5, 7};
+
         MergeSort mergeSort = new MergeSort();
         mergeSort.mergeSort(mergeArr2);
         assertEquals("[5, 5, 5, 7, 7, 12]",Arrays.toString(mergeArr2));
@@ -64,10 +66,44 @@ class AppTest {
     public void mergeSortTest3() {
 
         int[] mergeArr3 = {2};
+
         MergeSort mergeSort = new MergeSort();
         mergeSort.mergeSort(mergeArr3);
         assertEquals("[2]", Arrays.toString(mergeArr3));
     }
 
+    /**
+     * Code Challenge 28 Test
+     */
+
+    @Test
+    public void quickSortTest1(){
+
+        int[] quickSortArr1 = {8, 4, 23, 42, 16, 15};
+
+        QuickSort quickSort = new QuickSort();
+        quickSort.quickSort(quickSortArr1,0,5);
+        assertEquals("[4, 8, 15, 16, 23, 42]", Arrays.toString(quickSortArr1));
+    }
+
+    @Test
+    public void quickSortTest2(){
+
+        int[] quickSortArr2 = {20, 18, 12, 8, 5, -2};
+
+        QuickSort quickSort = new QuickSort();
+        quickSort.quickSort(quickSortArr2,0,5);
+        assertEquals("[-2, 5, 8, 12, 18, 20]", Arrays.toString(quickSortArr2));
+    }
+
+    @Test
+    public void quickSortTest3(){
+
+        int[] quickSortArr3 = {5, 12, 7, 5, 5, 7};
+
+        QuickSort quickSort = new QuickSort();
+        quickSort.quickSort(quickSortArr3,0,5);
+        assertEquals("[5, 5, 5, 7, 7, 12]", Arrays.toString(quickSortArr3));
+    }
 
 }

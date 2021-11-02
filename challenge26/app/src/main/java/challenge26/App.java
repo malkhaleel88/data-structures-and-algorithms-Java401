@@ -29,5 +29,13 @@ public class App {
 
         System.out.println(Arrays.toString(array));
 
+        /**
+         *  Code Challenge 28
+         */
+
+        QuickSort quickSort = new QuickSort();
+        quickSort.quickSort(array, 0, 5);
+
+        System.out.println(Arrays.toString(array));
     }
 }
