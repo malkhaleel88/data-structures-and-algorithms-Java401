@@ -1,6 +1,10 @@
 package challenge05.structure;
 
 import challenge05.data.LinkedListNode;
+import org.w3c.dom.Node;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class LinkedList {
 
@@ -42,22 +46,6 @@ public class LinkedList {
             }
         }
         return false;
-    }
-
-    @Override
-    public String toString() {
-        String printing = "";
-        if (head == null) {
-            System.out.println("THE LIST IS EMPTY");
-        } else {
-            LinkedListNode current = head;
-            while (current != null) {
-                printing = printing + " { " + current.getData() + " } " + " ---> ";
-                current = current.getNext();
-            }
-            printing = printing + " NULL ";
-        }
-        return printing;
     }
 
     /**
@@ -183,4 +171,61 @@ public class LinkedList {
         return linkedList1;
     }
 
+
+    public LinkedList sort(){
+        LinkedListNode current = this.head;
+        ArrayList<Integer> list = new ArrayList<>();
+        int tmp;
+        while(current != null){
+            list.add(Integer.parseInt(current.getData()));
+            current = current.getNext();
+        }
+        for(int i = 0; i<list.size(); i++ ){
+            for(int j = i; j<list.size(); j++ ){
+                if(list.get(j)>list.get(i)) {
+                    tmp = list.get(i);
+                    list.set(i, list.get(j));
+                    list.set(j, tmp);
+                }
+            }
+        }
+        head = null;
+        for(int i= 0;i<list.size();i++ ){
+            if (head == null) {
+                head = new LinkedListNode(list.get(i) + "");
+            } else {
+                LinkedListNode newNode = new LinkedListNode(list.get(i) + "");
+                newNode.setNext(head);
+                head = newNode;
+            }
+        }
+        return this;
+    }
+
+    public LinkedList plus(LinkedList list1,LinkedList list2) {
+        LinkedListNode current1 = list1.head;
+        LinkedListNode current2 = list2.head;
+        LinkedList newList = new LinkedList();
+        String ash = "0";
+        while (current1 != null) {
+            if (Integer.parseInt(current1.getData())+Integer.parseInt(current2.getData())<10|| current1.getNext()==null){
+            newList.append(Integer.parseInt(current1.getData())+Integer.parseInt(current2.getData())+Integer.parseInt(ash)+"");
+            }else {
+                newList.append(((Integer.parseInt(current1.getData())+Integer.parseInt(current2.getData()))+"").charAt(1)+"");
+                ash = ((Integer.parseInt(current1.getData())+Integer.parseInt(current2.getData()))+"").charAt(0)+"";
+            }
+            current1 = current1.getNext();
+            current2 = current2.getNext();
+        }
+        return newList;
+    }
+
+
+
+    @Override
+    public String toString() {
+        return "LinkedList{" +
+                "head=" + head +
+                '}';
+    }
 }
