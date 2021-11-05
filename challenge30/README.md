@@ -1,60 +1,39 @@
 # **30.Hash Tables**
 
-* **A Tree** is a non-linear data structure where data objects are generally organized in terms of hierarchical relationship. The structure is non-linear in the sense that, unlike Arrays, Linked Lists, Stack and Queues, data in a tree is not organized linearly.
-
-* **A binary tree** is a recursive tree data structure where each node can have 2 children at most.
+**A hash table** is a data structure that implements a hash table array, which maps keys to values.
 
 ## **Challenge**
 
-- Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
-- Create a Binary Tree class :
-  - Define a method for each of the depth first traversals :
-    * pre order
-    * in order
-    * post order
- 
-    Which returns an array of the values, ordered appropriately.
+* **We asked to implement hashtable by Creating 2 classes with their basic methods :**
 
-- Create a Binary Search Tree class
-with the following additional methods:
-  - Add
-    
-    Adds a new node with that value in the correct location in the binary search tree.
-
-  - Contains
-
-    Returns: boolean indicating whether or not the value is in the tree at least once.
+1. **Node class**
+2. **HashTable Class**
 
 ## **Approach & Efficiency**
 
-### **1. Binary Trees**
+* **add** - space complexity is O(n), time is 0(n).
 
-- The Big O time complexity for inserting a new node and Searching is O(n).
+* **get** - average time and space are O(1). Worst time is O(n).
 
-- The Big O space complexity for a node insertion using breadth first insertion will be O(w), where w is the largest width of the tree.
+* **contains** - average time and space are O(1). Worst time is O(n).
 
-### **2. Binary Search Trees**
-
-- The Big O time complexity of a Binary Search Tree’s insertion and search operations is O(h), or O(height). 
-
-- The Big O space complexity of a BST search would be O(1).
+* **hash** - average time and space are O(1). Worst time is O(n).
 
 ## **API**
 
-- In **Binary Tree** class we have 3 traversals methods, return an array of the values, ordered appropriately.
+* **add**
+  * Arguments: key, value.
+  * Returns: nothing.
+  * This method should hash the key, and add   the key and value pair to the table, handling collisions as needed.
 
-  1. pre order
-  2. in order
-  3. post order. 
+* **get**
+  * Arguments: key
+  * Returns: Value associated with that key in the table.
 
+* **contains**
+  * Arguments: key
+  * Returns: Boolean, indicating if the key exists in the table already.
 
-- In **Binary Search Tree** class we have 2 methods:
-
-  **1. Add**  
-    - Arguments: value  
-    - Return: nothing  
-      Adds a new node with that value in the correct location in the binary search tree.
-     
-  **2. Contains**  
-    - Argument: value  
-    - Returns: boolean indicating whether or not the value is in the tree at least once.
+* **hash**
+  * Arguments: key
+  * Returns: Index in the collection for that key

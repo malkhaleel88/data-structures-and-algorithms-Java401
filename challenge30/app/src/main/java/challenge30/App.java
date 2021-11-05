@@ -4,11 +4,26 @@
 package challenge30;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+
+        /**
+         * Code Challenge 30
+         */
+
+        HashTable<String, Integer> employeeSalary = new HashTable<String, Integer>();
+
+        employeeSalary.add("Mohammad", 1000);
+        employeeSalary.add("Ahmad", 900);
+        employeeSalary.add("Abdelqader", 1100);
+        employeeSalary.add("Ghadeer", 1500);
+        employeeSalary.add("Naim", 1200);
+
+        System.out.println("The size is => " + employeeSalary.getSize());
+        System.out.println("Mohammad salary is => " + employeeSalary.get("Mohammad"));
+        System.out.println("Is it contains Ahmad? => " + employeeSalary.contains("Ahmad"));
+        System.out.println("Delete Ahmad => " + employeeSalary.remove("Ahmad"));
+        System.out.println("The size is => " + employeeSalary.getSize());
+        System.out.println("Is it contains Ahmad? => " + employeeSalary.contains("Ahmad"));
     }
 }
