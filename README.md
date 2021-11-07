@@ -24,3 +24,4 @@
 | Code Challenge 27  |[Merge Sort](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge26)|
 | Code Challenge 28  |[Quick Sort](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge26)|
 | Code Challenge 30  |[Hash Tables](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge30)|
+| Code Challenge 31  |[Hashmap Repeated-Word](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge30)|

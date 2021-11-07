@@ -27,13 +27,31 @@
   * This method should hash the key, and add   the key and value pair to the table, handling collisions as needed.
 
 * **get**
-  * Arguments: key
+  * Arguments: key.
   * Returns: Value associated with that key in the table.
 
 * **contains**
-  * Arguments: key
+  * Arguments: key.
   * Returns: Boolean, indicating if the key exists in the table already.
 
 * **hash**
-  * Arguments: key
-  * Returns: Index in the collection for that key
+  * Arguments: key.
+  * Returns: Index in the collection for that key.
+
+-------------------------------------------------------------------------------------------------------------
+
+# **31.Hashmap Repeated-Word**
+
+## **Challenge Summary**
+
+Write a function that accepted a string parameter which finds the first word to occur more than once in a string and return a string.
+
+## **Whiteboard Process**
+
+![Hashmap Repeated-Word](assets/hashmap-repeated-word.jpg)
+
+## **Approach & Efficiency**
+
+* Time : O(n^2)
+
+* Space : O(n)

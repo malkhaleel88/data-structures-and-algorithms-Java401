@@ -11,52 +11,90 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
 
-        /**
-         * Code Challenge 30 Test
-         */
+    /**
+     * Code Challenge 30 Test
+     */
 
-        @Test
-        public void hashTable(){
-            HashTable<String, Integer> hashTableTest = new HashTable<>();
+    @Test
+    public void hashTable() {
+        HashTable<String, Integer> hashTableTest = new HashTable<>();
 
-            hashTableTest.add("Mercedes", 20);
-            hashTableTest.add("BMW", 40);
-            hashTableTest.add("Toyota", 70);
-            hashTableTest.add("Hyundai", 80);
-            hashTableTest.add("Ford", 100);
-            hashTableTest.remove("Hyundai");
+        hashTableTest.add("Mercedes", 20);
+        hashTableTest.add("BMW", 40);
+        hashTableTest.add("Toyota", 70);
+        hashTableTest.add("Hyundai", 80);
+        hashTableTest.add("Ford", 100);
+        hashTableTest.remove("Hyundai");
 
-            assertTrue(hashTableTest.contains("Toyota"));
-            assertEquals(100, hashTableTest.get("Ford"));
-            assertFalse(hashTableTest.contains("Hyundai"));
-            assertNull(hashTableTest.get("Mazda"));
-        }
+        assertTrue(hashTableTest.contains("Toyota"));
+        assertEquals(100, hashTableTest.get("Ford"));
+        assertFalse(hashTableTest.contains("Hyundai"));
+        assertNull(hashTableTest.get("Mazda"));
+    }
 
-        @Test
-        public void collision(){
-            System.out.println(Objects.hashCode("JS"));
-            System.out.println(Objects.hashCode("Java"));
+    @Test
+    public void collision() {
+        System.out.println(Objects.hashCode("JS"));
+        System.out.println(Objects.hashCode("Java"));
 
-            HashTable<String, Integer> hashTableTest = new HashTable<>();
+        HashTable<String, Integer> hashTableTest = new HashTable<>();
 
-            hashTableTest.add("HTML",50);
-            hashTableTest.add("CSS",60);
-            hashTableTest.add("JS",70);
-            hashTableTest.add("Java",90);
+        hashTableTest.add("HTML", 50);
+        hashTableTest.add("CSS", 60);
+        hashTableTest.add("JS", 70);
+        hashTableTest.add("Java", 90);
 
-            assertTrue(hashTableTest.contains("JS"));
-            assertTrue(hashTableTest.contains("Java"));
-            assertEquals(70, hashTableTest.get("JS"));
-            assertEquals(90, hashTableTest.get("Java"));
+        assertTrue(hashTableTest.contains("JS"));
+        assertTrue(hashTableTest.contains("Java"));
+        assertEquals(70, hashTableTest.get("JS"));
+        assertEquals(90, hashTableTest.get("Java"));
 
-        }
-        @Test
-        public void successfullyRetrieveValue() {
-            HashTable<String,Integer> hashTableTest = new HashTable<>();
+    }
 
-            hashTableTest.add("JS",70);
-            hashTableTest.add("Python",70);
-            assertEquals(70, hashTableTest.get("JS"));
+    @Test
+    public void successfullyRetrieveValue() {
+        HashTable<String, Integer> hashTableTest = new HashTable<>();
 
-        }
+        hashTableTest.add("JS", 70);
+        hashTableTest.add("Python", 70);
+        assertEquals(70, hashTableTest.get("JS"));
+
+    }
+
+    /**
+     * Code Challenge 31 Test
+     */
+
+    @Test
+    public void repeatedWordTest(){
+
+        HashTable<String, Integer> test = new HashTable<String, Integer>();
+
+        String paragraph1 = "Once upon a time, there was a brave princess who...";
+        assertEquals("a", test.repeatedWord(paragraph1));
+
+        String paragraph2 = "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way – in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only";
+        assertEquals("it", test.repeatedWord(paragraph2));
+
+        String paragraph3= "It was a queer,  sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York";
+        assertEquals("summer", test.repeatedWord(paragraph3));
+
+    }
+    @Test
+    public void repeatedWordTestNoRepeat(){
+
+        HashTable<String, Integer> test = new HashTable<String, Integer>();
+
+        String paragraph = "Once upon a time";
+        assertEquals("No Repeated Words", test.repeatedWord(paragraph));
+    }
+
+    @Test
+    public void repeatedWordTestEmpty(){
+
+        HashTable<String, Integer> test = new HashTable<String, Integer>();
+
+        String paragraph = "";
+        assertEquals("No Repeated Words", test.repeatedWord(paragraph));
+    }
 }
