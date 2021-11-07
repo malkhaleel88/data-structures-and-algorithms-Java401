@@ -1,6 +1,7 @@
 package challenge30;
 
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Objects;
 
 public class HashTable<K, V> {
@@ -11,6 +12,10 @@ public class HashTable<K, V> {
 
     private int size;
 
+
+    /**
+     * Code Challenge 30
+     */
 
     public HashTable() {
         bucketArray = new ArrayList<>();
@@ -131,4 +136,29 @@ public class HashTable<K, V> {
     public boolean contains(K key) {
         return get(key) != null;
     }
+
+
+    /**
+     * Code Challenge 31
+     */
+
+        public String repeatedWord(String strings) {
+            String allWords = strings.toLowerCase(Locale.ENGLISH);
+            String[] token = allWords.split(" ");
+            HashTable<String, Integer> hashMap = new HashTable<String, Integer>();
+
+            for (String word : token) {
+                if (word.contains(",")) {
+                    word = word.substring(0, word.length() - 1);
+                }
+                if (!word.equals("")) {
+                    int count = hashMap.get(word) != null ? hashMap.get(word) : 0;
+                    if (count == 1) {
+                        return word;
+                    }
+                    hashMap.add(word, count + 1);
+                }
+            }
+            return "No Repeated Words";
+        }
 }
