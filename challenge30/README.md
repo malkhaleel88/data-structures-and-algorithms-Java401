@@ -55,3 +55,20 @@ Write a function that accepted a string parameter which finds the first word to 
 * Time : O(n^2)
 
 * Space : O(n)
+
+-------------------------------------------------------------------------------------------------------------
+
+# **32.Tree Intersection**
+
+## **Challenge Summary**
+
+Create a method that takes two binary trees as a parameter and return an array of nodes that are similar in two trees.
+## **Whiteboard Process**
+
+![Tree Intersection](assets/tree-intersection.jpg)
+
+## **Approach & Efficiency**
+
+* Time : O(n)
+
+* Space : O(n)

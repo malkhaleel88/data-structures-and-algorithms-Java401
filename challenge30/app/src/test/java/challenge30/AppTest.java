@@ -97,4 +97,77 @@ class AppTest {
         String paragraph = "";
         assertEquals("No Repeated Words", test.repeatedWord(paragraph));
     }
+
+    /**
+     * Code Challenge 32 Test
+     */
+
+    @Test
+    public void intersectionTreeTest(){
+
+        HashTable<Integer,Integer> trees = new HashTable<Integer, Integer>();
+        BinaryTree tree1 = new BinaryTree();
+        BinaryTree tree2 = new BinaryTree();
+
+        tree1.setRoot(new BinaryTreeNode(150));
+        tree1.getRoot().setLeft(new BinaryTreeNode(100));
+        tree1.getRoot().setRight(new BinaryTreeNode(250));
+        tree1.getRoot().getRight().setLeft(new BinaryTreeNode(200));
+        tree1.getRoot().getRight().setRight(new BinaryTreeNode(350));
+
+        tree2.setRoot(new BinaryTreeNode(42));
+        tree2.getRoot().setLeft(new BinaryTreeNode(100));
+        tree2.getRoot().setRight(new BinaryTreeNode(600));
+        tree2.getRoot().getRight().setLeft(new BinaryTreeNode(200));
+        tree2.getRoot().getRight().setRight(new BinaryTreeNode(350));
+
+        assertEquals("[100, 200, 350]", trees.treeIntersection(tree1,tree2).toString());
+
+    }
+
+    @Test
+    public void intersectionTreeTestNoResults(){
+
+        HashTable<Integer,Integer> trees = new HashTable<Integer, Integer>();
+        BinaryTree tree1 = new BinaryTree();
+        BinaryTree tree2 = new BinaryTree();
+
+        tree1.setRoot(new BinaryTreeNode(150));
+        tree1.getRoot().setLeft(new BinaryTreeNode(100));
+        tree1.getRoot().setRight(new BinaryTreeNode(250));
+        tree1.getRoot().getRight().setLeft(new BinaryTreeNode(200));
+        tree1.getRoot().getRight().setRight(new BinaryTreeNode(350));
+
+        tree2.setRoot(new BinaryTreeNode(42));
+        tree2.getRoot().setLeft(new BinaryTreeNode(101));
+        tree2.getRoot().setRight(new BinaryTreeNode(600));
+        tree2.getRoot().getRight().setLeft(new BinaryTreeNode(201));
+        tree2.getRoot().getRight().setRight(new BinaryTreeNode(310));
+
+        assertEquals("[]", trees.treeIntersection(tree1,tree2).toString());
+
+    }
+
+    @Test
+    public void intersectionTreeDifferentNumOfNodes(){
+
+        HashTable<Integer,Integer> trees = new HashTable<Integer, Integer>();
+        BinaryTree tree1 = new BinaryTree();
+        BinaryTree tree2 = new BinaryTree();
+
+        tree1.setRoot(new BinaryTreeNode(150));
+        tree1.getRoot().setLeft(new BinaryTreeNode(100));
+        tree1.getRoot().setRight(new BinaryTreeNode(250));
+        tree1.getRoot().getRight().setLeft(new BinaryTreeNode(200));
+        tree1.getRoot().getRight().setRight(new BinaryTreeNode(350));
+
+        tree2.setRoot(new BinaryTreeNode(42));
+        tree2.getRoot().setLeft(new BinaryTreeNode(100));
+        tree2.getRoot().setRight(new BinaryTreeNode(600));
+        tree2.getRoot().getRight().setLeft(new BinaryTreeNode(200));
+
+        assertEquals("[100, 200]", trees.treeIntersection(tree1,tree2).toString());
+
+    }
+
 }
