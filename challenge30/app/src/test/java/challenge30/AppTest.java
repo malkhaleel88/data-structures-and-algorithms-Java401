@@ -5,6 +5,7 @@ package challenge30;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.HashMap;
 import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -168,6 +169,76 @@ class AppTest {
 
         assertEquals("[100, 200]", trees.treeIntersection(tree1,tree2).toString());
 
+    }
+
+    /**
+     * Code Challenge 33 Test
+     */
+
+    @Test
+    public void testLeftJoinWithAllJoins(){
+
+        HashMap h1 = new HashMap();
+
+        h1.put("fond", "enamored");
+        h1.put("wrath", "anger");
+        h1.put("flow", "jam");
+
+        HashMap h2 = new HashMap();
+
+        h2.put("fond", "averse");
+        h2.put("wrath", "delight");
+        h2.put("flow", "test");
+
+        assertEquals("[[ wrath, anger, delight ], [ flow, jam, test ], [ fond, enamored, averse ]]", HashTable.leftJoin(h1, h2).toString());
+    }
+
+    @Test
+    public void testLeftJoinWithSomeJoins(){
+
+        HashMap h1 = new HashMap();
+
+        h1.put("fond", "enamored");
+        h1.put("wrath", "anger");
+        h1.put("diligent", "employed");
+        h1.put("outfit", "garb");
+        h1.put("guide", "usher");
+
+        HashMap h2 = new HashMap();
+
+        h2.put("fond", "averse");
+        h2.put("wrath", "delight");
+        h2.put("flow", "jam");
+
+
+        assertEquals("[[ diligent, employed, null ], [ outfit, garb, null ], [ wrath, anger, delight ], [ guide, usher, null ], [ fond, enamored, averse ]]", HashTable.leftJoin(h1, h2).toString());
+    }
+
+    @Test
+    public void testLeftJoinWithEmptySecondHashMap(){
+
+        HashMap h1 = new HashMap();
+
+        h1.put("fond", "enamored");
+        h1.put("wrath", "anger");
+        h1.put("diligent", "employed");
+        h1.put("outfit", "garb");
+        h1.put("guide", "usher");
+
+        HashMap h2 = new HashMap();
+
+        assertEquals("[[ diligent, employed, null ], [ outfit, garb, null ], [ wrath, anger, null ], [ guide, usher, null ], [ fond, enamored, null ]]", HashTable.leftJoin(h1, h2).toString());
+
+    }
+
+    @Test
+    public void testLeftJoinBothEmptyHashMap(){
+
+        HashMap h1 = new HashMap();
+
+        HashMap h2 = new HashMap();
+
+        assertNull(HashTable.leftJoin(h1, h2));
     }
 
 }

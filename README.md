@@ -26,3 +26,4 @@
 | Code Challenge 30  |[Hash Tables](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge30)|
 | Code Challenge 31  |[Hashmap Repeated-Word](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge30)|
 | Code Challenge 32  |[Tree Intersection](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge30)|
+| Code Challenge 33  |[Hashmap Left-Join](https://github.com/malkhaleel88/data-structures-and-algorithms-Java401/tree/main/challenge30)|
