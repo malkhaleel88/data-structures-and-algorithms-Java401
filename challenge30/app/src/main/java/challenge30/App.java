@@ -3,6 +3,8 @@
  */
 package challenge30;
 
+import java.util.HashMap;
+
 public class App {
 
     public static void main(String[] args) {
@@ -44,7 +46,7 @@ public class App {
          * Code Challenge 32
          */
 
-        HashTable<Integer,Integer> intersection = new HashTable<Integer, Integer>();
+        HashTable<Integer, Integer> intersection = new HashTable<Integer, Integer>();
 
         BinaryTree tree1 = new BinaryTree();
         BinaryTree tree2 = new BinaryTree();
@@ -74,5 +76,28 @@ public class App {
         tree2.getRoot().getLeft().getRight().setRight(new BinaryTreeNode(175));
 
         System.out.println(intersection.treeIntersection(tree1, tree2));
+
+        System.out.println("================================");
+
+        /**
+         * Code Challenge 33
+         */
+
+        HashMap<String, String> firstHashMap = new HashMap<>();
+        HashMap<String, String> secondHashMap = new HashMap<>();
+
+        firstHashMap.put("fond", "enamored");
+        firstHashMap.put("wrath", "anger");
+        firstHashMap.put("diligent", "employed");
+        firstHashMap.put("outfit", "garb");
+        firstHashMap.put("guide", "usher");
+
+        secondHashMap.put("fond", "averse");
+        secondHashMap.put("wrath", "delight");
+        secondHashMap.put("diligent", "idle");
+        secondHashMap.put("guide", "follow");
+        secondHashMap.put("flow", "jam");
+
+        System.out.println(HashTable.leftJoin(firstHashMap, secondHashMap));
     }
 }

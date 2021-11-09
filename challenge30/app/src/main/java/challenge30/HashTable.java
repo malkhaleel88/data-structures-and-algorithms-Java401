@@ -140,35 +140,36 @@ public class HashTable<K, V> {
      * Code Challenge 31
      */
 
-        public String repeatedWord(String strings) {
-            String allWords = strings.toLowerCase(Locale.ENGLISH);
-            String[] token = allWords.split(" ");
-            HashTable<String, Integer> hashMap = new HashTable<String, Integer>();
+    public String repeatedWord(String strings) {
+        String allWords = strings.toLowerCase(Locale.ENGLISH);
+        String[] token = allWords.split(" ");
+        HashTable<String, Integer> hashMap = new HashTable<String, Integer>();
 
-            for (String word : token) {
-                if (word.contains(",")) {
-                    word = word.substring(0, word.length() - 1);
-                }
-                if (!word.equals("")) {
-                    int count = hashMap.get(word) != null ? hashMap.get(word) : 0;
-                    if (count == 1) {
-                        return word;
-                    }
-                    hashMap.add(word, count + 1);
-                }
+        for (String word : token) {
+            if (word.contains(",")) {
+                word = word.substring(0, word.length() - 1);
             }
-            return "No Repeated Words";
+            if (!word.equals("")) {
+                int count = hashMap.get(word) != null ? hashMap.get(word) : 0;
+                if (count == 1) {
+                    return word;
+                }
+                hashMap.add(word, count + 1);
+            }
         }
+        return "No Repeated Words";
+    }
+
     /**
      * Code Challenge 32
      */
 
-    public HashMap<Integer,Integer> hashMap = new HashMap<>();
+    public HashMap<Integer, Integer> hashMap = new HashMap<>();
     public List<Integer> intersections = new ArrayList<>();
 
-    public List<Integer> treeIntersection(BinaryTree tree1, BinaryTree tree2){
+    public List<Integer> treeIntersection(BinaryTree tree1, BinaryTree tree2) {
 
-        if (tree1.getRoot() == null || tree2.getRoot()  == null) {
+        if (tree1.getRoot() == null || tree2.getRoot() == null) {
             return null;
         }
 
@@ -183,10 +184,10 @@ public class HashTable<K, V> {
 
         if (node != null) {
 
-            int count = 0 ;
-            if(hashMap.get(node.getData()) == null){
+            int count = 0;
+            if (hashMap.get(node.getData()) == null) {
                 count = 1;
-            }else{
+            } else {
                 count = count + 1;
             }
 
@@ -197,14 +198,31 @@ public class HashTable<K, V> {
         }
     }
 
-    public void compare(BinaryTreeNode node){
+    public void compare(BinaryTreeNode node) {
         if (node != null) {
-            if (hashMap.get(node.getData()) != null){
+            if (hashMap.get(node.getData()) != null) {
                 intersections.add(node.getData());
             }
             compare(node.getLeft());
             compare(node.getRight());
         }
 
+    }
+
+    /**
+     * Code Challenge 33
+     */
+
+    public static List<String> leftJoin(HashMap<String, String> h1, HashMap<String, String> h2) {
+
+        if (h1.keySet().isEmpty()) {
+            return null;
+        }
+        List<String> list = new ArrayList<>();
+        for (String k : h1.keySet()) {
+
+            list.add("[ " + k + ", " + h1.get(k) + ", " + h2.get(k) + " ]");
+        }
+        return list;
     }
 }
