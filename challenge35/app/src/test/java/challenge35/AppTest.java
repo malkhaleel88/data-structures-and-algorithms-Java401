@@ -7,8 +7,78 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-    @Test void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+
+    /**
+     *  Code Challenge 35 Test
+     */
+
+    @Test
+    public void addNode(){
+
+        Graph graph = new Graph();
+
+        graph.addNode("Mohammad");
+        graph.addNode("Ghadeer");
+
+        assertNotNull(graph.getNodes());
+        assertEquals(2, graph.size());
     }
+
+    @Test
+    public void addEdge(){
+
+        Graph graph = new Graph();
+
+        graph.addNode("Mohammad");
+        graph.addNode("Ghadeer");
+
+        graph.addEdge("Mohammad", "Ghadeer");
+
+        assertEquals("\n" +
+                "Ghadeer is connected to [Mohammad]\n" +
+                "Mohammad is connected to [Ghadeer]", graph.printGraph());
+    }
+
+    @Test
+    public void NodeNeighbors(){
+
+        Graph graph = new Graph();
+
+        graph.addNode("Mohammad");
+        graph.addNode("Ghadeer");
+        graph.addNode("Naim");
+        graph.addNode("Osaid");
+
+        graph.addEdge("Mohammad", "Ghadeer");
+        graph.addEdge("Mohammad", "Naim");
+        graph.addEdge("Osaid", "Ghadeer");
+
+        assertEquals("[Ghadeer, Naim]", graph.getNeighbors("Mohammad").toString());
+        assertEquals("[Ghadeer]", graph.getNeighbors("Osaid").toString());
+
+    }
+
+    @Test
+    public void oneNodeAndOneEdge(){
+
+        Graph graph = new Graph();
+
+        graph.addNode("Mohammad");
+
+        graph.addEdge("Mohammad","Mohammad");
+
+        assertEquals("\n" +
+                "Mohammad is connected to [Mohammad, Mohammad]", graph.printGraph());
+    }
+
+    @Test
+    public void emptyGraph(){
+
+        Graph graph = new Graph();
+
+        assertEquals(0, graph.size());
+
+        assertEquals("[]", graph.getNodes().toString());
+    }
+
 }

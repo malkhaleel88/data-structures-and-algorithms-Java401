@@ -20,7 +20,7 @@ public class Graph {
         return node;
     }
 
-   public void addEdge(String data1, String data2) {
+    public void addEdge(String data1, String data2) {
         Vertex vertex1 = new Vertex(data1);
         Vertex vertex2 = new Vertex(data2);
 
@@ -28,7 +28,7 @@ public class Graph {
         adjVertices.get(vertex2).add(vertex1);
     }
 
-    public Set<Vertex> getNodes(){
+    public Set<Vertex> getNodes() {
         return adjVertices.keySet();
     }
 
@@ -41,16 +41,14 @@ public class Graph {
         return adjVertices.size();
     }
 
-    String printGraph() {
-        if (adjVertices.isEmpty()) {
-            return null;
-        } else {
-            StringBuilder stringBuilder = new StringBuilder();
-            for (Vertex vertex : adjVertices.keySet()) {
-                stringBuilder.append(vertex);
-                stringBuilder.append(adjVertices.get(vertex));
-            }
-            return stringBuilder.toString();
+    public String printGraph() {
+        String print = "";
+        for (Vertex vertex : adjVertices.keySet()) {
+            var targets = adjVertices.get(vertex);
+            if (!targets.isEmpty())
+                print += "\n" + vertex + " is connected to " + targets;
         }
+        return print;
     }
+
 }

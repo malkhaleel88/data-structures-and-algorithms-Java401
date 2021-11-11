@@ -13,6 +13,27 @@ public class App {
 
         Graph graph = new Graph();
 
-        
+        graph.addNode("Mohammad");
+        graph.addNode("Ghadeer");
+        graph.addNode("Naim");
+        graph.addNode("Osaid");
+
+        graph.addEdge("Mohammad","Ghadeer");
+        graph.addEdge("Mohammad", "Naim");
+        graph.addEdge("Mohammad", "Osaid");
+        graph.addEdge("Ghadeer", "Naim");
+        graph.addEdge("Naim", "Osaid");
+        graph.addEdge("Osaid", "Ghadeer");
+
+        System.out.println(graph.printGraph());;
+
+        System.out.println();
+        System.out.println(graph.getNodes());
+
+        System.out.println();
+        System.out.println(graph.getNeighbors("Mohammad"));
+
+        System.out.println();
+        System.out.println(graph.size());
     }
 }
