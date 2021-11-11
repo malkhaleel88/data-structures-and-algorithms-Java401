@@ -5,6 +5,8 @@ package challenge05;
 
 import challenge05.structure.LinkedList;
 
+import java.util.TreeMap;
+
 public class App {
 
     public static void main(String[] args) {
@@ -52,27 +54,27 @@ public class App {
 
         System.out.println(linkedList3.zipLists(linkedList3, linkedList4));
 
-//        LinkedList linkedList1 = new LinkedList();
+        LinkedList linkedList1 = new LinkedList();
 
-//        linkedList.append("8");
-//        linkedList.append("2");
-//        linkedList.append("6");
-//        linkedList.append("1");
-//        linkedList.append("5");
-//        linkedList.append("7");
-//
-//        linkedList1.append("8");
-//        linkedList1.append("2");
-//        linkedList1.append("6");
-//        linkedList1.append("1");
-//        linkedList1.append("5");
-//        linkedList1.append("7");
-//
-//        System.out.println(linkedList);
-//        System.out.println(linkedList1);
-//
-//        System.out.println(linkedList.sort());
-//        System.out.println(linkedList.plus(linkedList, linkedList1));
+        linkedList.append("8");
+        linkedList.append("2");
+        linkedList.append("6");
+        linkedList.append("1");
+        linkedList.append("5");
+        linkedList.append("7");
+
+        linkedList1.append("8");
+        linkedList1.append("2");
+        linkedList1.append("6");
+        linkedList1.append("1");
+        linkedList1.append("5");
+        linkedList1.append("7");
+
+        System.out.println(linkedList);
+        System.out.println(linkedList1);
+
+        System.out.println(linkedList.sort());
+        System.out.println(linkedList.plus(linkedList, linkedList1));
 
     }
 }

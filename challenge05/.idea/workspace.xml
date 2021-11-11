@@ -10,14 +10,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/challenge05/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/challenge05/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/challenge05/data/LinkedListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/challenge05/data/LinkedListNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/challenge05/structure/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/challenge05/structure/LinkedList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/challenge05/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/challenge05/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/challenge05/data/LinkedListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/challenge05/data/LinkedListNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/challenge05/structure/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/challenge05/structure/LinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,11 +173,11 @@
     </configuration>
     <list>
       <item itemvalue="Application.AppTest" />
+      <item itemvalue="Application.App" />
       <item itemvalue="Gradle.AppTest.addBeforefirst" />
       <item itemvalue="Gradle.AppTest.addAfterlast" />
       <item itemvalue="Gradle.AppTest.addMultiAtEnd" />
       <item itemvalue="Gradle.AppTest" />
-      <item itemvalue="Application.App" />
     </list>
     <recent_temporary>
       <list>
@@ -201,6 +199,8 @@
       <updated>1633014099620</updated>
       <workItem from="1635798340536" duration="171000" />
       <workItem from="1635798542982" duration="10955000" />
+      <workItem from="1636567496819" duration="5732000" />
+      <workItem from="1636646908258" duration="1330000" />
     </task>
     <servers />
   </component>
