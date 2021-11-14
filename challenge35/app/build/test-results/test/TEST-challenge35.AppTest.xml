@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="challenge35.AppTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-11-11T22:08:11" hostname="MOHA88" time="0.054">
+  <properties/>
+  <testcase name="oneNodeAndOneEdge()" classname="challenge35.AppTest" time="0.044"/>
+  <testcase name="addEdge()" classname="challenge35.AppTest" time="0.002"/>
+  <testcase name="addNode()" classname="challenge35.AppTest" time="0.001"/>
+  <testcase name="emptyGraph()" classname="challenge35.AppTest" time="0.001"/>
+  <testcase name="NodeNeighbors()" classname="challenge35.AppTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
