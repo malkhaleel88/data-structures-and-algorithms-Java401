@@ -51,4 +51,25 @@ public class Graph {
         return print;
     }
 
+    /**
+     * Code Challenge 36
+     */
+
+   public Set<String> breadthTraverse(String root) {
+        Set<String> visited = new LinkedHashSet<>();
+        Queue<String> queue = new LinkedList<>();
+        queue.add(root);
+        visited.add(root);
+        while (!queue.isEmpty()) {
+            String vertex = queue.poll();
+            for (Vertex v : getNeighbors(vertex)) {
+                if (!visited.contains(v.label)) {
+                    visited.add(v.label);
+                    queue.add(v.label);
+                }
+            }
+        }
+        return visited;
+    }
+
 }
