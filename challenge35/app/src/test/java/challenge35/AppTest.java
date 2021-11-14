@@ -81,4 +81,55 @@ class AppTest {
         assertEquals("[]", graph.getNodes().toString());
     }
 
+    /**
+     *  Code Challenge 36 Test
+     */
+
+    @Test
+    public void breadthFirst(){
+
+        Graph graph = new Graph();
+
+        graph.addNode("Pandora");
+        graph.addNode("Arendelle");
+        graph.addNode("Metroville");
+        graph.addNode("Monstroplolis");
+        graph.addNode("Narnia");
+        graph.addNode("Naboo");
+
+        graph.addEdge("Pandora", "Arendelle");
+        graph.addEdge("Arendelle", "Metroville");
+        graph.addEdge("Arendelle", "Monstroplolis");
+        graph.addEdge("Metroville", "Narnia");
+        graph.addEdge("Metroville", "Naboo");
+        graph.addEdge("Metroville", "Monstroplolis");
+        graph.addEdge("Monstroplolis", "Naboo");
+        graph.addEdge("Narnia", "Naboo");
+
+        assertEquals("[Pandora, Arendelle, Metroville, Monstroplolis, Narnia, Naboo]", graph.breadthTraverse("Pandora").toString());
+    }
+
+    @Test
+    public void breadthFirstOneVertex(){
+
+        Graph graph = new Graph();
+
+        graph.addNode("Pandora");
+        assertEquals("[Pandora]", graph.breadthTraverse("Pandora").toString());
+    }
+
+    @Test
+    public void breadthFirstTest(){
+
+        Graph graph = new Graph();
+
+        graph.addNode("Pandora");
+        graph.addNode("Arendelle");
+        graph.addNode("Metroville");
+
+        graph.addEdge("Pandora", "Arendelle");
+
+        assertEquals("[Pandora, Arendelle]", graph.breadthTraverse("Pandora").toString());
+    }
+
 }

@@ -18,14 +18,14 @@ public class App {
         graph.addNode("Naim");
         graph.addNode("Osaid");
 
-        graph.addEdge("Mohammad","Ghadeer");
+        graph.addEdge("Mohammad", "Ghadeer");
         graph.addEdge("Mohammad", "Naim");
         graph.addEdge("Mohammad", "Osaid");
         graph.addEdge("Ghadeer", "Naim");
         graph.addEdge("Naim", "Osaid");
         graph.addEdge("Osaid", "Ghadeer");
 
-        System.out.println(graph.printGraph());;
+        System.out.println(graph.printGraph());
 
         System.out.println();
         System.out.println(graph.getNodes());
@@ -35,5 +35,32 @@ public class App {
 
         System.out.println();
         System.out.println(graph.size());
+
+        System.out.println("==========================================");
+
+        /**
+         * Code Challenge 36
+         */
+
+        Graph graph1 = new Graph();
+
+        graph1.addNode("Pandora");
+        graph1.addNode("Arendelle");
+        graph1.addNode("Metroville");
+        graph1.addNode("Monstroplolis");
+        graph1.addNode("Narnia");
+        graph1.addNode("Naboo");
+
+        graph1.addEdge("Pandora", "Arendelle");
+        graph1.addEdge("Arendelle", "Metroville");
+        graph1.addEdge("Arendelle", "Monstroplolis");
+        graph1.addEdge("Metroville", "Narnia");
+        graph1.addEdge("Metroville", "Naboo");
+        graph1.addEdge("Metroville", "Monstroplolis");
+        graph1.addEdge("Monstroplolis", "Naboo");
+        graph1.addEdge("Narnia", "Naboo");
+
+
+        System.out.println(graph1.breadthTraverse("Pandora"));
     }
 }

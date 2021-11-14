@@ -43,5 +43,20 @@
 
 5. `size()`: This method to get the number of all vertices in the graph.
 
--------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+# **36.Graph Breadth First**
 
+Create a static method which returns a Set of the Graph vertices in their breadth from a specified root.
+## **Challenge Summary**
+
+Create a method that take a vertex as a parameter as a start point and return a collection of vertices in the order they were visited.
+
+## **Whiteboard Process**
+
+![Graph Breadth First](assets/Graph-breadth-first.jpg)
+
+## **Approach & Efficiency**
+
+* Time: O(n^2)
+
+* Space: O(n)
