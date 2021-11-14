@@ -38,7 +38,7 @@ public class LinkedList {
         } else {
             LinkedListNode current = head;
 
-            while (current != null) {
+            while (current.getNext() != null) {
                 if (current.getData() == data) {
                     return true;
                 }
