@@ -53,10 +53,30 @@ Create a method that take a vertex as a parameter as a start point and return a 
 
 ## **Whiteboard Process**
 
-![Graph Breadth First](assets/Graph-breadth-first.jpg)
+![Graph Breadth First](assets/graph-breadth-first.jpg)
 
 ## **Approach & Efficiency**
 
 * Time: O(n^2)
 
 * Space: O(n)
+
+---------------------------------------------------------------------------------------------------------------
+
+# **37.Graph Business Trip**
+
+This challenge to check the weight of edge between the connected vertices.
+
+## **Challenge Summary**
+
+Create a method give us the cost of the trip between cities.
+
+## **Whiteboard Process**
+
+![Graph Business Trip](assets/graph-business-trip.jpg)
+
+## **Approach & Efficiency**
+
+* Time: O(n^2)
+
+* Space: O(1)
