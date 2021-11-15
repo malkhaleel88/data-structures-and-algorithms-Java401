@@ -5,13 +5,20 @@ import java.util.Objects;
 public class Vertex {
 
     String label;
+    int weight;
+
 
 
     public Vertex(String label) {
         this.label = label;
     }
 
-        @Override
+    public Vertex(String label, int weight) {
+        this.label = label;
+        this.weight = weight;
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
