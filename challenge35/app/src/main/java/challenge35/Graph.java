@@ -80,7 +80,6 @@ public class Graph {
         Vertex Vertex1 = new Vertex(data1, weight);
         Vertex Vertex2 = new Vertex(data2, weight);
 
-
         adjVertices.get(Vertex1).add(Vertex2);
         adjVertices.get(Vertex2).add(Vertex1);
     }
@@ -111,5 +110,28 @@ public class Graph {
         return 0;
     }
 
+    /**
+     * Code Challenge 38
+     */
+
+    public Set<String> depthFirst(String root) {
+        if (adjVertices.isEmpty()) {
+            return null;
+        }
+        Set<String> visited = new LinkedHashSet<>();
+        Stack<String> stack = new Stack<>();
+        stack.push(root);
+//        visited.add(root);
+        while (!stack.isEmpty()) {
+            String tempNode = stack.pop();
+            if (!visited.contains(tempNode)) {
+                visited.add(tempNode);
+            for (Vertex v : getNeighbors(tempNode.toString())) {
+                    stack.push(v.label);
+                }
+            }
+        }
+        return visited;
+    }
 
 }
