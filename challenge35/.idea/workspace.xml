@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fc0ef72-26e2-4a4b-a077-54161ca012cb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
@@ -14,6 +13,7 @@
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/challenge35/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/challenge35/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/challenge35/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/challenge35/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/challenge35/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/challenge35/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,7 @@
       <recent name="\\wsl$\Ubuntu\home\malkhaleel88\Projects401\data-structures-and-algorithms-Java401\challenge35\assets" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Gradle.AppTest.depthFirstTest2">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="challenge35.App" />
       <module name="challenge35.app.main" />
@@ -83,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.breadthFirstTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.depthFirstOneVertex" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge35.AppTest.breadthFirstTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;challenge35.AppTest.depthFirstOneVertex&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -104,12 +104,33 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.testEmpty" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.depthFirstTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge35.AppTest.testEmpty&quot;" />
+        <option name="scriptParameters" value="--tests &quot;challenge35.AppTest.depthFirstTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AppTest.depthFirstTest2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;challenge35.AppTest.depthFirstTest2&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -146,34 +167,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.testOnlyListItem" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;challenge35.AppTest.testOnlyListItem&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AppTest.depthFirstTest2" />
+        <item itemvalue="Gradle.AppTest.depthFirstOneVertex" />
+        <item itemvalue="Gradle.AppTest.depthFirstTest" />
         <item itemvalue="Application.App" />
         <item itemvalue="Gradle.AppTest.testHappyPath" />
-        <item itemvalue="Gradle.AppTest.testOnlyListItem" />
-        <item itemvalue="Gradle.AppTest.testEmpty" />
-        <item itemvalue="Gradle.AppTest.breadthFirstTest" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +189,7 @@
       <workItem from="1636907386861" duration="4361000" />
       <workItem from="1636981133740" duration="7644000" />
       <workItem from="1637046945995" duration="243000" />
-      <workItem from="1637061420076" duration="5236000" />
+      <workItem from="1637061420076" duration="8184000" />
     </task>
     <servers />
   </component>

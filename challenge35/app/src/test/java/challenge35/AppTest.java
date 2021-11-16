@@ -235,6 +235,58 @@ class AppTest {
         assertEquals("False, $0", graph.businessTrip(graph, path3));
     }
 
+    /**
+     *  Code Challenge 38 Test
+     */
 
+    @Test
+    public void depthFirstTest(){
 
+        Graph graph = new Graph();
+
+        graph.addNode("A");
+        graph.addNode("B");
+        graph.addNode("C");
+        graph.addNode("D");
+        graph.addNode("E");
+        graph.addNode("F");
+        graph.addNode("G");
+        graph.addNode("H");
+
+        graph.addEdge("A", "D");
+        graph.addEdge("A", "B");
+        graph.addEdge("B", "D");
+        graph.addEdge("B", "C");
+        graph.addEdge("C", "G");
+        graph.addEdge("D", "F");
+        graph.addEdge("D", "H");
+        graph.addEdge("D", "E");
+        graph.addEdge("F", "H");
+
+        assertEquals("[A, B, C, G, D, E, H, F]", graph.depthFirst("A").toString());
+    }
+
+    @Test
+    public void depthFirstOneVertex(){
+
+        Graph graph = new Graph();
+
+        graph.addNode("A");
+
+        assertEquals("[A]", graph.depthFirst("A").toString());
+    }
+
+    @Test
+    public void depthFirstTest2(){
+
+        Graph graph = new Graph();
+
+        graph.addNode("A");
+        graph.addNode("B");
+        graph.addNode("C");
+
+        graph.addEdge("A", "B");
+
+        assertEquals("[A, B]", graph.depthFirst("A").toString());
+    }
 }

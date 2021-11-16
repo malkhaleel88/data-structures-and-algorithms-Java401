@@ -90,6 +90,7 @@ Create a static method which returns a Set of the Graph vertices in their Depth 
 ## **Challenge Summary**
 
 Create a method that take a vertex as a parameter as a start point and return a collection of vertices in the order they were visited.
+
 ## **Whiteboard Process**
 
 ![Graph Depth First](assets/graph-depth-first.jpg)

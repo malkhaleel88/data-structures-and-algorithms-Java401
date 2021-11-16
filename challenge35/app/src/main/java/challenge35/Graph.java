@@ -121,16 +121,18 @@ public class Graph {
         Set<String> visited = new LinkedHashSet<>();
         Stack<String> stack = new Stack<>();
         stack.push(root);
-//        visited.add(root);
+
         while (!stack.isEmpty()) {
-            String tempNode = stack.pop();
-            if (!visited.contains(tempNode)) {
-                visited.add(tempNode);
-            for (Vertex v : getNeighbors(tempNode.toString())) {
+            String vertex = stack.pop();
+            if (!visited.contains(vertex)) {
+                visited.add(vertex);
+
+                for (Vertex v : getNeighbors(vertex)) {
                     stack.push(v.label);
                 }
             }
         }
+
         return visited;
     }
 

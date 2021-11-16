@@ -133,6 +133,6 @@ public class App {
         graph3.addEdge("D", "H");
         graph3.addEdge("F", "H");
 
-        System.out.println(graph3.depthFirst("M"));
+        System.out.println(graph3.depthFirst("A"));
     }
 }
