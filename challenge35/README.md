@@ -80,3 +80,23 @@ Create a method give us the cost of the trip between cities.
 * Time: O(n^2)
 
 * Space: O(1)
+
+---------------------------------------------------------------------------------------------------------------
+
+# **38.Graph Depth First**
+
+Create a static method which returns a Set of the Graph vertices in their Depth from a specified root.
+
+## **Challenge Summary**
+
+Create a method that take a vertex as a parameter as a start point and return a collection of vertices in the order they were visited.
+
+## **Whiteboard Process**
+
+![Graph Depth First](assets/graph-depth-first.jpg)
+
+## **Approach & Efficiency**
+
+* Time: O(n^2)
+
+* Space: O(n)
